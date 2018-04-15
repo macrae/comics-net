@@ -1,3 +1,5 @@
+import pandas as pd
+import re
 import urllib.request
 
 from bs4 import BeautifulSoup
@@ -209,7 +211,8 @@ def get_issues_from_title(title_id):
                     lambda x: 'graphics/comic_graphics' in x[0]['src'],
                     new_image_rows))
                 image = list(compress(new_image_rows, new_fil))[0][0]['src']
-                large_image = image.split('_thumb.')[0] + '_large.' + image.split('.')[1]
+                large_image = image.split(
+                    '_thumb.')[0] + '_large.' + image.split('.')[1]
                 image_prefix = (issue['issue'] + '_' +
                                 issue['title'] + '_' +
                                 issue['arc'] + '_' +
@@ -228,7 +231,41 @@ def get_character_list(url):
     url = 'http://comicbookdb.com/search.php?form_search=Marvel&form_searchtype=Character'
     raw_html = simple_get(url)
     html = BeautifulSoup(raw_html, 'html.parser')
-
     table_rows = []
     for tr in html.body.select('tr'):
         table_rows.append((tr.text))
+    # pattern = r"((\w+)(\s\w+)*)\s(\(\w+\)(\s\(\w+\)))?"
+    pattern = r"(?i)(?P<name>(\w+)(\s\w+)*)\s(?P<combo>(\((?P<studio>\w+)\))(\((?P<series>[0-9a-z\-\'\\]+(\s[0-9a-z\-\'\\]+)*)\))?)"
+    matches = list(re.finditer(pattern, table_rows[5]))
+    characters = []
+    for match in matches:
+        name = match.group('name')
+        studio = match.group('studio')
+        series = match.group('series')
+        combo = match.group('combo')
+        link = match.group(0)
+        character = {'name': name,
+                     'studio': studio,
+                     'series': series,
+                     'combo': combo,
+                     'link': link}
+        characters.append(character)
+    return characters
+
+
+url = 'http://comicbookdb.com/search.php?form_search=Marvel&form_searchtype=Character'
+
+characters = get_character_list(url)
+
+
+def character_dicts_to_df(characters):
+    rows = []
+    for i in range(0, len(characters)):
+        rows.append(pd.DataFrame.from_dict(characters[i], orient='index').T)
+    return pd.concat(rows, axis=0)
+
+
+character_df = character_dicts_to_df(characters)
+
+
+character_df.to_csv('../metadata/characters.csv')
