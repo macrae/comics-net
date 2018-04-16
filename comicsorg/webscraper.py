@@ -41,34 +41,6 @@ def log_error(e):
     """
     print(e)
 
-############################################################################
-# Get Title Links
-############################################################################
-
-
-############################################################################
-# Get Title Issue Links and Metadata
-############################################################################
-
-# TODO: add pagination
-# "https://www.comics.org/searchNew/?q=marvel+x-men&selected_facets=facet_model_name_exact:issue&selected_facets=country_exact:us&selected_facets=publisher_exact:Marvel&page=2"
-
-raw_html = simple_get(
-    "https://www.comics.org/searchNew/?q=marvel+x-men&selected_facets=facet_model_name_exact:issue&selected_facets=country_exact:us&selected_facets=publisher_exact:Marvel")
-
-html = BeautifulSoup(raw_html, 'html.parser')
-
-table_rows = []
-for tr in html.select('tr'):
-    table_rows.append((tr.text, tr.a))
-
-table_rows = list(filter(lambda x: "ISSUE" in x[0], table_rows))
-
-
-############################################################################
-# Get Issue Cover Images and Meta-data
-############################################################################
-
 
 def get_issue_html(href):
     url = 'https://www.comics.org' + href
@@ -77,9 +49,13 @@ def get_issue_html(href):
     return html
 
 
-# set([tag.name for tag in issue_html.find_all()])
+def get_issue_series(issue_html):
+    return issue_html.find("span", {"class": "feature"}).text
 
-issue_html = get_issue_html(table_rows[21][1]['href'])
+
+def get_issue_right(issue_html):
+    return issue_html.find("div", {"class": "right"}).text.\
+        replace('\n', '').strip()
 
 
 def get_issue_title(issue_html):
@@ -99,7 +75,8 @@ def get_issue_cover_img(issue_html, save_directory):
     html = BeautifulSoup(raw_html, 'html.parser')
     images = html.select('img')
     cover_images = list(filter(lambda x:
-                               'files1.comics.org//img/' in x['src'], images))
+                               'files1.comics.org//img/' in x['src'],
+                               images))
     cover_image = cover_images[0]['src']
     save_to = save_directory + issue_title + '.jpg'
     urllib.request.urlretrieve(cover_image, save_to)
@@ -108,20 +85,68 @@ def get_issue_cover_img(issue_html, save_directory):
 
 def get_cover_metadata(issue_html):
     metadata = issue_html.find("div", {"class": "cover"}).\
-                          find("div", {'coverContent'})
+        find("div", {'coverContent'})
     metadata_labels = list(map(lambda x:
-                           x.text.replace(':', '').strip().lower(),
-                           metadata.findAll("span", {'credit_label'})))
+                               x.text.replace(':', '').strip().lower(),
+                               metadata.findAll("span", {'credit_label'})))
     metadata_values = list(map(lambda x:
-                           x.text.replace(' ?', '').strip(),
-                           metadata.findAll("span", {'credit_value'})))
+                               x.text.replace(' ?', '').strip(),
+                               metadata.findAll("span", {'credit_value'})))
     return dict(zip(metadata_labels, metadata_values))
 
+# TODO: add pagination
+# "https://www.comics.org/searchNew/?q=marvel+x-men&selected_facets=facet_model_name_exact:issue&selected_facets=country_exact:us&selected_facets=publisher_exact:Marvel&page=2"
 
-get_issue_title(issue_html)
-get_issue_cover_img(issue_html, './covers')
-get_cover_metadata(issue_html)
+# "https://www.comics.org/searchNew/?q=marvel+x-men&selected_facets=facet_model_name_exact:issue&selected_facets=country_exact:us&selected_facets=publisher_exact:Marvel"
 
-get_cover_metadata(issue_html)['characters']
+# set([tag.name for tag in issue_html.find_all()])
+
+
+def get_issue_data(url):
+    raw_html = simple_get(url)
+    html = BeautifulSoup(raw_html, 'html.parser')
+
+    table_rows = []
+    for tr in html.select('tr'):
+        table_rows.append((tr.text, tr.a))
+
+    table_rows = list(filter(lambda x: "ISSUE" in x[0], table_rows))
+
+    issue_data = []
+    for i in range(0, len(table_rows)):
+        issue_html = get_issue_html(table_rows[i][1]['href'])
+
+        try:
+            series = get_issue_series(issue_html)
+        except:
+            series = 'nan'
+
+        try:
+            right = get_issue_right(issue_html)
+        except:
+            series = 'nan'
+
+        try:
+            title = get_issue_title(issue_html)
+        except:
+            title = 'nan'
+
+        try:
+            cover = get_issue_cover_img(issue_html, './covers/')
+        except:
+            cover = 'nan'
+
+        try:
+            metadata = get_cover_metadata(issue_html)
+        except:
+            metadata = 'nan'
+
+        issue_data.append({'series': series,
+                           'right': right,
+                           'title': title,
+                           'cover': cover,
+                           'metadata': metadata})
+        print(cover)
+    return issue_data
 
 # df.to_csv('../metadata/characters.csv')
