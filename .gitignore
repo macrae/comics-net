@@ -65,8 +65,8 @@ target/
 ml_engagements/
 status_report/
 
-comicsorg/covers
-comicsorg/metadata
+jupyter/covers/
+jupyter/metadata/
 
 
 *.ipynb_checkpoints
