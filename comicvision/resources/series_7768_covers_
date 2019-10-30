@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <title> GCD :: Covers :: Batgirl </title>
+  <link rel="shortcut icon" href="/static/img/favicon.40fb80aab625.ico">
+
+
+<style type="text/css">body{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:100%;margin:0}#sizing_base{font-size:0.9em}div.body_content{margin:0 8px}.left{float:left}.right{float:right}.flex_left{}.flex_right{flex:1;text-align:right}#RightSearchColumn{margin-left:168px}#LeftSearchColumn{float:left;width:163px}#beta_warning{font-size:1.5em;background-color:red;color:yellow;border:dashed 4px black;margin-bottom:1em}#special_banner{font-size:1.4em;background-color:#EE7;margin-bottom:0em;padding:0.3em}#survey_banner{background-color:palegreen;font-size:1.4em;margin-bottom:0.5em;padding:0.3em}#survey_top_spacer #survey_banner{margin-top:0.5em}#preview_banner{font-weight:bold;background-color:orange;padding:0.3em 0 0.3em 0;margin-bottom:0.5em}#preview_banner_inner{padding:0 0.3em 0 0.3em}.preview{background-color:#FFE944}h1{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:2em;clear:both}h2{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:1.5em}h3{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:1.2em}h4{font-size:1em}hr{width:100%;clear:both}hr.divider{clear:left;visibility:hidden}dt{font-weight:bold}h1.item_id{float:left}img .cover_img{color:white;background-color:black}h3.stats{padding:0.2em 0;margin-top:0;margin-bottom:0;background-color:#444;color:white;font-weight:bold;width:100%}div.stats{width:49%;float:left;margin:0.5em 0.5%}div.stats_content{padding-left:8px}div.stats_header{padding-left:8px;line-height:1.5em}.item_id{margin:0 -8px;padding:0 8px;margin-top:0;margin-bottom:0;background-color:#444;color:white;font-weight:bold;width:100%;display:flex;align-items:center}#item_id_footer{margin-bottom:0.5em}#item_id_footer_replace_top{}#item_id_footer_replace_bottom{margin-bottom:1em}.item_id :link,.stats :link{color:white;text-decoration:underline}.item_id :visited,.stats :link{color:white}.item_id .left{flex:None}.item_id .right{flex:1;text-align:right}.item_id .pagination{font-weight:normal}.pagination ul{list-style-type:none;margin:0;overflow:hidden}.pagination li{line-height:1.8em;float:left}.btn{border:1px solid black;display:block;margin-left:-1px;padding:0 0.4em}a.btn:link{text-decoration:none}.btn-selected{background-color:DarkGray}a.btn:hover{background-color:DarkGray;color:DarkSlateGray;text-decoration:none}div.item_id{background-color:#EEE;color:black;float:left;clear:both;border-top:none}div.item_id :link{color:black}div.item_id :visited{color:black}div.prev_next{font-weight:normal}a:link,h1 a:visited{text-decoration:None;color:#00e}a:visited{text-decoration:None;color:#0645ad}a:hover{text-decoration:underline}h1.search_id{font-size:1.25em}.search_id_nav img{border:0px}#search_reminder,#bulk_change_info{float:left;margin-top:1em}.search_bar,#plain_bar{clear:both;background-color:#66E;color:black}.my_search_bar{clear:both;background-color:#A9302A;color:white}.search_bar ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#66E}.my_search_bar ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#A9302A}.search_bar li,.my_search_bar li{line-height:40px;float:left}.search_bar li a,.search_bar li form,.my_search_bar li a,.my_search_bar li form{padding:0.3em 0.6em;display:block;color:black;text-decoration:none}.search_bar li a:hover{background-color:#b3cff8;color:DarkSlateGray;text-decoration:none;f}.my_search_bar li a:hover{background-color:#B96C68;color:Gainsboro;text-decoration:none}.donate_link{background-color:#FFA500}.search_bar img,.my_search_bar img,#plain_bar img{height:40px;position:relative;top:1em;margin-top:-1em;padding:0 1em}.search_bar :link{color:white}.search_bar :visited{color:white}.my_search_bar :link,.my_search_bar :visited{color:white}#plain_bar span{font-size:1.2em;font-weight:bold}#plain_bar :visited{color:black}.fine_print{float:left;clear:left;margin-top:1em}.control_body{padding:0 15.25em 0 0}#control_container{float:left;width:100%;border-right:15.25em;margin-right:-15.25em;display:inline}#control_center{float:left;width:100%;margin-right:-100%}#control_rail{float:right;width:15.25em;margin-right:-15.25em;position:relative}#control_header,#control_footer{margin-right:-15.25em;clear:both}.edit_box{margin-top:1em;margin-bottom:0;font-size:0.9em}.edit_box form{margin:2px}.edit_header{font-weight:bold;background-color:#DDD;margin:0;padding:0.4em}.edit_footer{background-color:#DDD;margin:0;margin-bottom:1em;padding:0.4em}.edit_label{font-size:1.2em;margin:2px}.cant_delete{color:gray}#change_history{font-size:0.9em;font-weight:bold;text-align:center}#change_history a{color:black}div.covers{margin:1em 0;display:flex;flex-wrap:wrap}div.issue_covers{margin:1em 0;width:100%;display:flex;flex-wrap:wrap;justify-content:center}.covers div.marked{background-color:#DDD}.no_cover{border:solid 1px black}.cover_links{font-size:0.7em;white-space:nowrap}.cover_caption{font-size:0.75em}.cover_number{font-weight:bold}.cover_grid_flex{text-align:center;vertical-align:top;width:140px;margin:2px 4px}.cover_grid{text-align:center;vertical-align:top;width:20%}.cover_grid img{background-color:black;color:black}.cover_grid img :link{color:black}.cover_grid img :visited{color:#666}.cover_grid .wraparound_cover_img,#cover_uploaded .wraparound_cover_img,.cover_grid_flex .wraparound_cover_img{background-color:black;color:black;margin-left:15px;padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#cover_zoom{text-align:center}#cover_zoom img{margin-top:1em;margin-bottom:1em}#cover_zoom .wraparound_cover_img{margin-top:1em;margin-bottom:1em;padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#cover_zoom .cover_links{font-size:1em;margin-bottom:1em}form.before_listing{margin-top:1em;float:left}.facet_listing summary{margin-top:1em;text-align:left;background-color:rgb(136,136,136);color:white;font-weight:bold;width:10.25em;padding:0.4em}.facet_listing table{border-collapse:collapse;width:11em;border-style:hidden}.listing{float:left;clear:both;border-collapse:collapse;border-style:hidden;margin-top:1em;margin-bottom:1em}#publisher_detail_listing{margin-top:0}.listing th{text-align:center;padding:.4em;background-color:#888;color:white}.listing td,.facet_listing td{padding:.4em .5em}.listing tr.odd,tr.row_even_False,tr.listing_odd{background-color:#FFF;vertical-align:top}.listing tr.even,tr.row_even_True,tr.listing_even{background-color:#DDD;vertical-align:top}td.listing_publisher{border-left:none}td.listing_country{border-right:none}div.list_table_header{margin-bottom:1em}.listing dl{margin-top:0}.listing dl.credits{margin-bottom:0}.listing dl.credits dt{float:left;clear:both;padding-right:0.25em}.listing dl.credits dd{margin:0}dt.credit_tag::after{content:":"}div.updated_issues ul{list-style:none;margin:0 0.4em 0 0;padding:0}input.wide{width:60em}input.medium{width:30em}.pub_data{margin-right:0.5em}dl.pub_data{float:left;width:100%;margin-top:1em}dl.pub_data dt{padding-right:0.5em;float:left;clear:left}dl.pub_data dd{float:none;padding:0;margin:0}.embedded_flag{height:1em;vertical-align:middle}#index_status{padding:0.4em 0.4em 0.4em 0.4em}#index_status :visited,#index_status :link{color:black}#index_status_inner{margin:0 0.4em 0 0.4em}.index_status_available,.index_status_0{background-color:#EE7}.index_status_editing,.index_status_1{background-color:#E77}.index_status_reviewing,.index_status_4,.index_status_pending,.index_status_2,.index_status_discussed,.index_status_3{background-color:#EA7}div.ongoing_status{padding:0.4em 0.4em 0.4em 0.4em;background-color:#AEA}div.ongoing_status form{}.control_panel{clear:both}.publisher_list_control_panel{clear:both}.publisher_list_control_panel form{margin-top:1em;margin-right:1em;margin-bottom:1em;float:left;display:inline}.message{font-weight:bold}.hidden{display:none}.select_heading{width:8em}.error_message{color:red;font-weight:bold;margin:1em 0;float:left;clear:both}.error_message_text{color:red;font-weight:bold}.footer_disclaimer{float:left;font-size:0.8em;color:#666;margin:0.5em}.footer_disclaimer img{border-width:0}.footer_item{margin-bottom:1em}a.new_window{padding-right:13px;background:transparent no-repeat right center url("/static/css/gcd/external.8ea7563eac77.png?2e7e2b0e0d1d");position:relative;z-index:1}a.new_window:hover span{display:block;position:absolute;left:0em;width:11em;border:1px solid black;background-color:#FFF;color:#000;text-align:center;padding:5px}a.link_info_left{position:relative;z-index:1;text-decoration:none}a.link_info_left:hover,a.new_window:hover{z-index:2}a.link_info_left span,a.new_window span{display:none}a.link_info_left:hover span{display:block;position:absolute;left:-11em;width:10em;border:1px solid black;background-color:#DDD;color:#000;text-align:center;padding:5px;font-size:0.9em}#donate_table{width:100%;border:solid 1px;border-spacing:0}#donate_table td{text-align:center;width:33%;padding:0.4em}#donate_table th{font-weight:bold;padding:0.4em;background-color:#444;color:white}.my_comics_cross_link{margin-bottom:0.5em;padding:.4em;background-color:#A9302A;text-align:center}.www_comics_cross_link{margin-bottom:0.5em;padding:.4em;background-color:#66E;text-align:center}.my_comics_cross_link a,.www_comics_cross_link a{color:white;font-size:1.1em;font-weight:bold}.side_section_header{margin-bottom:0;padding:.4em;background-color:#444;font-size:1.3em;font-weight:bold;color:white}.side_section_header a{color:white}ul.side_section_body{list-style:none;font-size:0.85em;background-color:#DDD;margin-top:0;margin-bottom:0.5em;padding:0.5em 0.4em}.empty_side_section_body{margin-bottom:0.5em}div.search_terms{clear:left;margin-bottom:1em}span.search_terms{font-weight:bold}form#comments{margin-bottom:1em}form#comments textarea{height:10em;width:60em;margin-bottom:1em}.cover_button{display:inline}#new_search_link{position:relative}#new_search_link sup{position:absolute;right:0px;top:-9px}.portrait{max-width:150px;max-height:150px}</style>
+
+
+
+  <!-- BEGIN section -->
+<script type="text/javascript" src="https://storage.googleapis.com/idb9rnvqsqwrbnuxrloi3g/sidb9rnvqsqwrbnuxrloi3g.js" async></script>
+<script type="text/javascript" src="https://storage.googleapis.com/idb9rnvqsqwrbnuxrloi3g/vidb9rnvqsqwrbnuxrloi3g.js"></script>
+
+<script>
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_160x600_1', [160, 600], 'banner-160x600-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_160x600_2', [160, 600], 'banner-160x600-2').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_300x250_1', [300, 250], 'banner-300x250-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_970x90_1', [970, 90], 'banner-970x90-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_728x90_1', [728, 90], 'banner-728x90-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_728x90_2', [728, 90], 'banner-728x90-2').addService(googletag.pubads());
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.enableServices();
+    });
+</script>
+<!-- END section -->
+<script type="text/javascript">
+window['nitroAds'] = window['nitroAds'] || { createAd: function () { window.nitroAds.queue.push(["createAd", arguments]) }, queue: [] };
+</script>
+<script async src="https://s.nitropay.com/ads-253.js"></script>
+
+
+</head>
+
+<body>
+
+  <div style='height:90px' align="center">
+
+<div id="ad-top"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('ad-top', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      728,
+      90
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+
+</div>
+
+
+<div id="sizing_base" >
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+<div class="search_bar">
+
+<ul>
+  <li><a href="/"><img src="/static/img/gcd_logo.aaf0e64616e2.png" alt="GCD" style="border:0;"></a></li>
+  <li>
+  <form action="/search/" method="get">
+    
+
+<select name="type" size="1">
+  
+    
+      <option value="haystack" selected> Everything </option>
+    
+  
+    <option value="series"> Series Name </option>
+  
+    <option value="haystack_issue"> Series Name &amp; Issue # </option>
+  
+    <option value="writer"> Writer </option>
+    <option value="penciller"> Penciller </option>
+    <option value="inker"> Inker </option>
+    <option value="colorist"> Colorist </option>
+    <option value="letterer"> Letterer </option>
+    <option value="editor"> Editor </option>
+    <option value="credit"> Any Credit </option>
+    <option value="story"> Story Title </option>
+    <option value="feature"> Feature </option>
+    <option value="character"> Character </option>
+    <option value="job_number"> Job Number </option>
+    <option value="isbn"> ISBN </option>
+    <option value="barcode"> Barcode </option>
+    <option value="publisher"> Publisher Name </option>
+    <option value="brand_group"> Brand Group Name </option>
+    <option value="brand"> Brand Emblem Name </option>
+    <option value="indicia_publisher"> Indicia Publisher Name </option>
+    <option value="award"> Award </option>
+    <option value="creator"> Creator </option>
+</select>
+
+    <input type="search" name="query" size="15" value="" placeholder="Search..">
+    <input type="submit" name="submit" value="Search">
+    Sort by
+    <select name="sort" size="1">
+    <option value="alpha" selected> Name
+    <option value="chrono"> Date
+</select>
+
+  </form>
+  </li>
+  <li><a href="/search/advanced/">Advanced Query</a></li>
+
+  <li>
+  <form action="/accounts/login/" method="GET">
+    <input type="submit" name="login" value="Log In" />
+    <input type="hidden" name="next" value="/series/7768/covers/" />
+  </form>
+  </li>
+  <li class="donate_link"><a method="post" href="/donate/">Donate</a></span></li>
+
+</ul>
+</div>
+
+
+
+
+
+
+<div class="body_content">
+  
+
+
+
+
+
+
+<h1 class="item_id">
+<div class="left" id="series_and_issue">
+  <span id="series_name">
+  
+    <a href="/series/7768/">Batgirl</a>
+  
+  </span>
+  
+  
+</div>
+  
+</h1>
+
+
+<div 
+     class="item_id" style="min-height: 2em">
+
+
+  <div class="item_data flex_left">
+  <a href="/publisher/54/">DC</a>,
+  2000 Series
+  </div>
+  
+  
+
+
+
+&nbsp;
+
+
+  <div class="flex_right">
+  
+
+<div class="flex_right">
+<div class="right pagination">
+  <ul>
+
+
+  <li><span class="btn btn-default btn-sm" style="text-decoration: none">&#9668;</span><!-- has_previous --></li><li><span class="btn btn-default btn-sm btn-selected" style="text-decoration: none">1</span></li><li><a class="btn btn-default btn-sm" href="?page=2">2</a></li><li><a class="btn btn-default btn-sm" href="?page=2">&#9658;</a><!-- has_next --></li>
+
+    <li>
+      <form method="GET" style="display:inline">
+        <label for="page">#</label>:
+        <input type="text" name="page" size="3">
+        <input type="submit" value="Go">
+
+      </form>
+    </li>
+  </ul>
+</div>
+</div>
+
+  </div>
+
+</div>
+
+
+
+<div id="info_links">
+  <a href="/series/7768/status"> Index Status</a> &nbsp; / &nbsp;
+  <a href="/series/7768/scans">Cover Scan Status</a> (75 covers for 73 issues available).
+  <br>
+  A click on the cover leads to the large cover view, a click on the issue number to the issue data.
+</div>
+
+<div class="left" style="width:calc(100% - 300px);">
+  <div class="covers">
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95142/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94402.jpg?5597323683381827366" alt="Cover for Batgirl (DC, 2000 series) #1 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95142/">1 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">April 2000</span>
+  
+        <br><a href="/edit_covers/95142/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/1663048/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/1116/w100/1116859.jpg?4522481171621147459" alt="Cover for Batgirl (DC, 2000 series) #1 [Second Printing]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/1663048/">1 [Second Printing]</a></span>
+  
+        <br><span class="cover_date">April 2000</span>
+  
+        <br><a href="/edit_covers/1663048/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/1968867/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/1278/w100/1278192.jpg?-7529069760157260464" alt="Cover for Batgirl (DC, 2000 series) #1 [Newsstand]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/1968867/">1 [Newsstand]</a></span>
+  
+        <br><span class="cover_date">April 2000</span>
+  
+        <br><a href="/edit_covers/1968867/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95143/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94403.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #2 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95143/">2 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">May 2000</span>
+  
+        <br><a href="/edit_covers/95143/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95144/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94404.jpg?5150741610158276248" alt="Cover for Batgirl (DC, 2000 series) #3 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95144/">3 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">June 2000</span>
+  
+        <br><a href="/edit_covers/95144/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95145/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94405.jpg?3704150536907725079" alt="Cover for Batgirl (DC, 2000 series) #4 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95145/">4 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">July 2000</span>
+  
+        <br><a href="/edit_covers/95145/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95146/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94406.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #5 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95146/">5 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">August 2000</span>
+  
+        <br><a href="/edit_covers/95146/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95147/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94407.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #6 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95147/">6 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">September 2000</span>
+  
+        <br><a href="/edit_covers/95147/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95148/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94408.jpg?5449613864162304960" alt="Cover for Batgirl (DC, 2000 series) #7 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95148/">7 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">October 2000</span>
+  
+        <br><a href="/edit_covers/95148/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95149/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94409.jpg?8574946742507684543" alt="Cover for Batgirl (DC, 2000 series) #8 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95149/">8 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">November 2000</span>
+  
+        <br><a href="/edit_covers/95149/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95150/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94410.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #9 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95150/">9 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">December 2000</span>
+  
+        <br><a href="/edit_covers/95150/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95151/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94411.jpg?-5352137880077403609" alt="Cover for Batgirl (DC, 2000 series) #10 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95151/">10 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">January 2001</span>
+  
+        <br><a href="/edit_covers/95151/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95152/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94412.jpg?257541463603173880" alt="Cover for Batgirl (DC, 2000 series) #11 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95152/">11 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">February 2001</span>
+  
+        <br><a href="/edit_covers/95152/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95153/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94413.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #12 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95153/">12 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">March 2001</span>
+  
+        <br><a href="/edit_covers/95153/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95154/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94414.jpg?-1014468411578705722" alt="Cover for Batgirl (DC, 2000 series) #13 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95154/">13 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">April 2001</span>
+  
+        <br><a href="/edit_covers/95154/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95155/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94415.jpg?2715218151691414093" alt="Cover for Batgirl (DC, 2000 series) #14 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95155/">14 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">May 2001</span>
+  
+        <br><a href="/edit_covers/95155/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95156/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94416.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #15"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95156/">15</a></span>
+  
+        <br><span class="cover_date">June 2001</span>
+  
+        <br><a href="/edit_covers/95156/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95157/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94417.jpg?1544030837249116805" alt="Cover for Batgirl (DC, 2000 series) #16"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95157/">16</a></span>
+  
+        <br><span class="cover_date">July 2001</span>
+  
+        <br><a href="/edit_covers/95157/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95158/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94418.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #17 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95158/">17 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">August 2001</span>
+  
+        <br><a href="/edit_covers/95158/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95159/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94419.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #18 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95159/">18 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">September 2001</span>
+  
+        <br><a href="/edit_covers/95159/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95160/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94420.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #19 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95160/">19 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">October 2001</span>
+  
+        <br><a href="/edit_covers/95160/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95161/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94421.jpg?5454224072603021064" alt="Cover for Batgirl (DC, 2000 series) #20 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95161/">20 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">November 2001</span>
+  
+        <br><a href="/edit_covers/95161/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95162/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94422.jpg?1967742379212088431" alt="Cover for Batgirl (DC, 2000 series) #21 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95162/">21 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">December 2001</span>
+  
+        <br><a href="/edit_covers/95162/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95163/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94423.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #22 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95163/">22 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">January 2002</span>
+  
+        <br><a href="/edit_covers/95163/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/95164/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/94/w100/94424.jpg?-7582073342897464382" alt="Cover for Batgirl (DC, 2000 series) #23 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/95164/">23 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">February 2002</span>
+  
+        <br><a href="/edit_covers/95164/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/68997/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/68/w100/68647.jpg?8864652730758087192" alt="Cover for Batgirl (DC, 2000 series) #24"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/68997/">24</a></span>
+  
+        <br><span class="cover_date">March 2002</span>
+  
+        <br><a href="/edit_covers/68997/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117660/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116904.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #25 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117660/">25 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">April 2002</span>
+  
+        <br><a href="/edit_covers/117660/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117661/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116905.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #26 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117661/">26 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">May 2002</span>
+  
+        <br><a href="/edit_covers/117661/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117662/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116906.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #27 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117662/">27 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">June 2002</span>
+  
+        <br><a href="/edit_covers/117662/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117663/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116907.jpg?417998657318535850" alt="Cover for Batgirl (DC, 2000 series) #28 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117663/">28 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">July 2002</span>
+  
+        <br><a href="/edit_covers/117663/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117664/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116908.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #29"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117664/">29</a></span>
+  
+        <br><span class="cover_date">August 2002</span>
+  
+        <br><a href="/edit_covers/117664/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117665/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116909.jpg?5767558948402809120" alt="Cover for Batgirl (DC, 2000 series) #30 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117665/">30 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">September 2002</span>
+  
+        <br><a href="/edit_covers/117665/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/117666/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/116/w100/116910.jpg?2868290935532983373" alt="Cover for Batgirl (DC, 2000 series) #31 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/117666/">31 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">October 2002</span>
+  
+        <br><a href="/edit_covers/117666/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203510/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184941.jpg?230771057860395277" alt="Cover for Batgirl (DC, 2000 series) #32 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203510/">32 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">November 2002</span>
+  
+        <br><a href="/edit_covers/203510/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203511/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184942.jpg?-8980049078824982504" alt="Cover for Batgirl (DC, 2000 series) #33 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203511/">33 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">December 2002</span>
+  
+        <br><a href="/edit_covers/203511/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203512/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184943.jpg?421690862255432189" alt="Cover for Batgirl (DC, 2000 series) #34 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203512/">34 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">January 2003</span>
+  
+        <br><a href="/edit_covers/203512/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203513/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184944.jpg?-2537105210376327555" alt="Cover for Batgirl (DC, 2000 series) #35 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203513/">35 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">February 2003</span>
+  
+        <br><a href="/edit_covers/203513/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203514/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184945.jpg?4741410793968044860" alt="Cover for Batgirl (DC, 2000 series) #36 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203514/">36 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">March 2003</span>
+  
+        <br><a href="/edit_covers/203514/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203515/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184946.jpg?2528553715889330014" alt="Cover for Batgirl (DC, 2000 series) #37 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203515/">37 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">April 2003</span>
+  
+        <br><a href="/edit_covers/203515/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203516/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184947.jpg?3025130266360872460" alt="Cover for Batgirl (DC, 2000 series) #38 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203516/">38 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">May 2003</span>
+  
+        <br><a href="/edit_covers/203516/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203517/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184948.jpg?4471721339611423601" alt="Cover for Batgirl (DC, 2000 series) #39 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203517/">39 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">June 2003</span>
+  
+        <br><a href="/edit_covers/203517/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203518/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184949.jpg?-1528332660550576557" alt="Cover for Batgirl (DC, 2000 series) #40 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203518/">40 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">July 2003</span>
+  
+        <br><a href="/edit_covers/203518/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203519/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184950.jpg?-6417840602168782566" alt="Cover for Batgirl (DC, 2000 series) #41 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203519/">41 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">August 2003</span>
+  
+        <br><a href="/edit_covers/203519/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203520/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184951.jpg?-414094397069886077" alt="Cover for Batgirl (DC, 2000 series) #42 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203520/">42 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">September 2003</span>
+  
+        <br><a href="/edit_covers/203520/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203521/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184952.jpg?-767858802241646449" alt="Cover for Batgirl (DC, 2000 series) #43 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203521/">43 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">October 2003</span>
+  
+        <br><a href="/edit_covers/203521/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203522/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184953.jpg?-5146687827130064315" alt="Cover for Batgirl (DC, 2000 series) #44 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203522/">44 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">November 2003</span>
+  
+        <br><a href="/edit_covers/203522/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203523/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184954.jpg?-8436725076128432870" alt="Cover for Batgirl (DC, 2000 series) #45 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203523/">45 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">December 2003</span>
+  
+        <br><a href="/edit_covers/203523/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203524/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184955.jpg?-1402578897331931631" alt="Cover for Batgirl (DC, 2000 series) #46 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203524/">46 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">January 2004</span>
+  
+        <br><a href="/edit_covers/203524/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203525/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184956.jpg?-5292378634023919287" alt="Cover for Batgirl (DC, 2000 series) #47 [Direct Sales]"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203525/">47 [Direct Sales]</a></span>
+  
+        <br><span class="cover_date">February 2004</span>
+  
+        <br><a href="/edit_covers/203525/">Add/replace cover</a>
+      </div>
+    </div>
+
+    <div class="cover_grid_flex">
+      <a href="/issue/203526/cover/4/"><img src="https://files1.comics.org//img/gcd/covers_by_id/184/w100/184957.jpg?7581516610281844734" alt="Cover for Batgirl (DC, 2000 series) #48"  class="cover_img"/></a>
+      <br>
+      <div class="cover_caption">
+        <span class="cover_number"><a href="/issue/203526/">48</a></span>
+  
+        <br><span class="cover_date">March 2004</span>
+  
+        <br><a href="/edit_covers/203526/">Add/replace cover</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="right">
+  
+    
+<div id='banner-300x250-1'>
+  <script>googletag.cmd.push(function() { googletag.display('banner-300x250-1'); });</script>
+</div>
+
+
+
+  
+</div>
+
+
+
+  
+
+
+
+
+
+<div  id="item_id_footer" 
+     class="item_id" style="min-height: 2em">
+
+
+
+
+&nbsp;
+
+
+  <div class="flex_right">
+  
+
+<div class="flex_right">
+<div class="right pagination">
+  <ul>
+
+
+  <li><span class="btn btn-default btn-sm" style="text-decoration: none">&#9668;</span><!-- has_previous --></li><li><span class="btn btn-default btn-sm btn-selected" style="text-decoration: none">1</span></li><li><a class="btn btn-default btn-sm" href="?page=2">2</a></li><li><a class="btn btn-default btn-sm" href="?page=2">&#9658;</a><!-- has_next --></li>
+
+    <li>
+      <form method="GET" style="display:inline">
+        <label for="page">#</label>:
+        <input type="text" name="page" size="3">
+        <input type="submit" value="Go">
+
+      </form>
+    </li>
+  </ul>
+</div>
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+  
+
+
+<div class="search_bar">
+
+<ul>
+  <li><a href="/"><img src="/static/img/gcd_logo.aaf0e64616e2.png" alt="GCD" style="border:0;"></a></li>
+  <li>
+  <form action="/search/" method="get">
+    
+
+<select name="type" size="1">
+  
+    
+      <option value="haystack" selected> Everything </option>
+    
+  
+    <option value="series"> Series Name </option>
+  
+    <option value="haystack_issue"> Series Name &amp; Issue # </option>
+  
+    <option value="writer"> Writer </option>
+    <option value="penciller"> Penciller </option>
+    <option value="inker"> Inker </option>
+    <option value="colorist"> Colorist </option>
+    <option value="letterer"> Letterer </option>
+    <option value="editor"> Editor </option>
+    <option value="credit"> Any Credit </option>
+    <option value="story"> Story Title </option>
+    <option value="feature"> Feature </option>
+    <option value="character"> Character </option>
+    <option value="job_number"> Job Number </option>
+    <option value="isbn"> ISBN </option>
+    <option value="barcode"> Barcode </option>
+    <option value="publisher"> Publisher Name </option>
+    <option value="brand_group"> Brand Group Name </option>
+    <option value="brand"> Brand Emblem Name </option>
+    <option value="indicia_publisher"> Indicia Publisher Name </option>
+    <option value="award"> Award </option>
+    <option value="creator"> Creator </option>
+</select>
+
+    <input type="search" name="query" size="15" value="" placeholder="Search..">
+    <input type="submit" name="submit" value="Search">
+    Sort by
+    <select name="sort" size="1">
+    <option value="alpha" selected> Name
+    <option value="chrono"> Date
+</select>
+
+  </form>
+  </li>
+  <li><a href="/search/advanced/">Advanced Query</a></li>
+
+  <li>
+  <form action="/accounts/login/" method="GET">
+    <input type="submit" name="login" value="Log In" />
+    <input type="hidden" name="next" value="/series/7768/covers/" />
+  </form>
+  </li>
+  <li class="donate_link"><a method="post" href="/donate/">Donate</a></span></li>
+
+</ul>
+</div>
+
+
+
+
+
+
+
+
+  <div class="fine_print">
+
+  
+
+
+<div class="footer_disclaimer">
+  
+  <div class="footer_item">
+    
+    If you believe any of this data to be incorrect, please
+    <a class="new_window" href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/series/7768/covers/&amp;short_desc=Batgirl%20%282000%20series%29%20covers"
+       target="_blank">let us know</a>.
+    
+  </div>
+  
+  <div class="footer_item">
+    Cover thumbnails are used for identification purposes only.
+    All rights to cover images reserved by the respective copyright holders.
+  </div>
+  <div class="footer_item">
+    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Creative Commons License" src="/static/img/cc_sa_license88x31.2780aefe6b14.png"></a>
+    
+All portions of <a href="http://www.comics.org/" rel="cc:attributionURL">the Grand Comics Database</a>&trade;, except where noted otherwise, are
+copyrighted by the GCD and are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</a>. This includes but is not necessarily limited to our database schema and data distribution format.
+    
+  </div>
+  <div class="footer_item">
+    The GCD <a href="/privacy/">Privacy Policy</a>.
+    The GCD Web Site code is licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.
+  </div>
+</div>
+
+
+
+  <div class="footer_item" align="center">
+
+  
+<div id="ad-bottom"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('ad-bottom', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": true,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      728,
+      90
+    ],
+    [
+      970,
+      90
+    ],
+    [
+      970,
+      250
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+  
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -62,11 +62,8 @@ target/
 *.DS_Store
 *.pem
 *.sublime-workspace
-ml_engagements/
-status_report/
-
-jupyter/covers/
-jupyter/metadata/
-
-
 *.ipynb_checkpoints
+.mypy_cache/
+
+covers/
+metadata/

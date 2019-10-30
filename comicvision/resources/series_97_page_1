@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <title>
+  GCD :: Publisher :: DC
+</title>
+  <link rel="shortcut icon" href="/static/img/favicon.40fb80aab625.ico">
+
+
+<style type="text/css">body{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:100%;margin:0}#sizing_base{font-size:0.9em}div.body_content{margin:0 8px}.left{float:left}.right{float:right}.flex_left{}.flex_right{flex:1;text-align:right}#RightSearchColumn{margin-left:168px}#LeftSearchColumn{float:left;width:163px}#beta_warning{font-size:1.5em;background-color:red;color:yellow;border:dashed 4px black;margin-bottom:1em}#special_banner{font-size:1.4em;background-color:#EE7;margin-bottom:0em;padding:0.3em}#survey_banner{background-color:palegreen;font-size:1.4em;margin-bottom:0.5em;padding:0.3em}#survey_top_spacer #survey_banner{margin-top:0.5em}#preview_banner{font-weight:bold;background-color:orange;padding:0.3em 0 0.3em 0;margin-bottom:0.5em}#preview_banner_inner{padding:0 0.3em 0 0.3em}.preview{background-color:#FFE944}h1{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:2em;clear:both}h2{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:1.5em}h3{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:1.2em}h4{font-size:1em}hr{width:100%;clear:both}hr.divider{clear:left;visibility:hidden}dt{font-weight:bold}h1.item_id{float:left}img .cover_img{color:white;background-color:black}h3.stats{padding:0.2em 0;margin-top:0;margin-bottom:0;background-color:#444;color:white;font-weight:bold;width:100%}div.stats{width:49%;float:left;margin:0.5em 0.5%}div.stats_content{padding-left:8px}div.stats_header{padding-left:8px;line-height:1.5em}.item_id{margin:0 -8px;padding:0 8px;margin-top:0;margin-bottom:0;background-color:#444;color:white;font-weight:bold;width:100%;display:flex;align-items:center}#item_id_footer{margin-bottom:0.5em}#item_id_footer_replace_top{}#item_id_footer_replace_bottom{margin-bottom:1em}.item_id :link,.stats :link{color:white;text-decoration:underline}.item_id :visited,.stats :link{color:white}.item_id .left{flex:None}.item_id .right{flex:1;text-align:right}.item_id .pagination{font-weight:normal}.pagination ul{list-style-type:none;margin:0;overflow:hidden}.pagination li{line-height:1.8em;float:left}.btn{border:1px solid black;display:block;margin-left:-1px;padding:0 0.4em}a.btn:link{text-decoration:none}.btn-selected{background-color:DarkGray}a.btn:hover{background-color:DarkGray;color:DarkSlateGray;text-decoration:none}div.item_id{background-color:#EEE;color:black;float:left;clear:both;border-top:none}div.item_id :link{color:black}div.item_id :visited{color:black}div.prev_next{font-weight:normal}a:link,h1 a:visited{text-decoration:None;color:#00e}a:visited{text-decoration:None;color:#0645ad}a:hover{text-decoration:underline}h1.search_id{font-size:1.25em}.search_id_nav img{border:0px}#search_reminder,#bulk_change_info{float:left;margin-top:1em}.search_bar,#plain_bar{clear:both;background-color:#66E;color:black}.my_search_bar{clear:both;background-color:#A9302A;color:white}.search_bar ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#66E}.my_search_bar ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#A9302A}.search_bar li,.my_search_bar li{line-height:40px;float:left}.search_bar li a,.search_bar li form,.my_search_bar li a,.my_search_bar li form{padding:0.3em 0.6em;display:block;color:black;text-decoration:none}.search_bar li a:hover{background-color:#b3cff8;color:DarkSlateGray;text-decoration:none;f}.my_search_bar li a:hover{background-color:#B96C68;color:Gainsboro;text-decoration:none}.donate_link{background-color:#FFA500}.search_bar img,.my_search_bar img,#plain_bar img{height:40px;position:relative;top:1em;margin-top:-1em;padding:0 1em}.search_bar :link{color:white}.search_bar :visited{color:white}.my_search_bar :link,.my_search_bar :visited{color:white}#plain_bar span{font-size:1.2em;font-weight:bold}#plain_bar :visited{color:black}.fine_print{float:left;clear:left;margin-top:1em}.control_body{padding:0 15.25em 0 0}#control_container{float:left;width:100%;border-right:15.25em;margin-right:-15.25em;display:inline}#control_center{float:left;width:100%;margin-right:-100%}#control_rail{float:right;width:15.25em;margin-right:-15.25em;position:relative}#control_header,#control_footer{margin-right:-15.25em;clear:both}.edit_box{margin-top:1em;margin-bottom:0;font-size:0.9em}.edit_box form{margin:2px}.edit_header{font-weight:bold;background-color:#DDD;margin:0;padding:0.4em}.edit_footer{background-color:#DDD;margin:0;margin-bottom:1em;padding:0.4em}.edit_label{font-size:1.2em;margin:2px}.cant_delete{color:gray}#change_history{font-size:0.9em;font-weight:bold;text-align:center}#change_history a{color:black}div.covers{margin:1em 0;display:flex;flex-wrap:wrap}div.issue_covers{margin:1em 0;width:100%;display:flex;flex-wrap:wrap;justify-content:center}.covers div.marked{background-color:#DDD}.no_cover{border:solid 1px black}.cover_links{font-size:0.7em;white-space:nowrap}.cover_caption{font-size:0.75em}.cover_number{font-weight:bold}.cover_grid_flex{text-align:center;vertical-align:top;width:140px;margin:2px 4px}.cover_grid{text-align:center;vertical-align:top;width:20%}.cover_grid img{background-color:black;color:black}.cover_grid img :link{color:black}.cover_grid img :visited{color:#666}.cover_grid .wraparound_cover_img,#cover_uploaded .wraparound_cover_img,.cover_grid_flex .wraparound_cover_img{background-color:black;color:black;margin-left:15px;padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#cover_zoom{text-align:center}#cover_zoom img{margin-top:1em;margin-bottom:1em}#cover_zoom .wraparound_cover_img{margin-top:1em;margin-bottom:1em;padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#cover_zoom .cover_links{font-size:1em;margin-bottom:1em}form.before_listing{margin-top:1em;float:left}.facet_listing summary{margin-top:1em;text-align:left;background-color:rgb(136,136,136);color:white;font-weight:bold;width:10.25em;padding:0.4em}.facet_listing table{border-collapse:collapse;width:11em;border-style:hidden}.listing{float:left;clear:both;border-collapse:collapse;border-style:hidden;margin-top:1em;margin-bottom:1em}#publisher_detail_listing{margin-top:0}.listing th{text-align:center;padding:.4em;background-color:#888;color:white}.listing td,.facet_listing td{padding:.4em .5em}.listing tr.odd,tr.row_even_False,tr.listing_odd{background-color:#FFF;vertical-align:top}.listing tr.even,tr.row_even_True,tr.listing_even{background-color:#DDD;vertical-align:top}td.listing_publisher{border-left:none}td.listing_country{border-right:none}div.list_table_header{margin-bottom:1em}.listing dl{margin-top:0}.listing dl.credits{margin-bottom:0}.listing dl.credits dt{float:left;clear:both;padding-right:0.25em}.listing dl.credits dd{margin:0}dt.credit_tag::after{content:":"}div.updated_issues ul{list-style:none;margin:0 0.4em 0 0;padding:0}input.wide{width:60em}input.medium{width:30em}.pub_data{margin-right:0.5em}dl.pub_data{float:left;width:100%;margin-top:1em}dl.pub_data dt{padding-right:0.5em;float:left;clear:left}dl.pub_data dd{float:none;padding:0;margin:0}.embedded_flag{height:1em;vertical-align:middle}#index_status{padding:0.4em 0.4em 0.4em 0.4em}#index_status :visited,#index_status :link{color:black}#index_status_inner{margin:0 0.4em 0 0.4em}.index_status_available,.index_status_0{background-color:#EE7}.index_status_editing,.index_status_1{background-color:#E77}.index_status_reviewing,.index_status_4,.index_status_pending,.index_status_2,.index_status_discussed,.index_status_3{background-color:#EA7}div.ongoing_status{padding:0.4em 0.4em 0.4em 0.4em;background-color:#AEA}div.ongoing_status form{}.control_panel{clear:both}.publisher_list_control_panel{clear:both}.publisher_list_control_panel form{margin-top:1em;margin-right:1em;margin-bottom:1em;float:left;display:inline}.message{font-weight:bold}.hidden{display:none}.select_heading{width:8em}.error_message{color:red;font-weight:bold;margin:1em 0;float:left;clear:both}.error_message_text{color:red;font-weight:bold}.footer_disclaimer{float:left;font-size:0.8em;color:#666;margin:0.5em}.footer_disclaimer img{border-width:0}.footer_item{margin-bottom:1em}a.new_window{padding-right:13px;background:transparent no-repeat right center url("/static/css/gcd/external.8ea7563eac77.png?2e7e2b0e0d1d");position:relative;z-index:1}a.new_window:hover span{display:block;position:absolute;left:0em;width:11em;border:1px solid black;background-color:#FFF;color:#000;text-align:center;padding:5px}a.link_info_left{position:relative;z-index:1;text-decoration:none}a.link_info_left:hover,a.new_window:hover{z-index:2}a.link_info_left span,a.new_window span{display:none}a.link_info_left:hover span{display:block;position:absolute;left:-11em;width:10em;border:1px solid black;background-color:#DDD;color:#000;text-align:center;padding:5px;font-size:0.9em}#donate_table{width:100%;border:solid 1px;border-spacing:0}#donate_table td{text-align:center;width:33%;padding:0.4em}#donate_table th{font-weight:bold;padding:0.4em;background-color:#444;color:white}.my_comics_cross_link{margin-bottom:0.5em;padding:.4em;background-color:#A9302A;text-align:center}.www_comics_cross_link{margin-bottom:0.5em;padding:.4em;background-color:#66E;text-align:center}.my_comics_cross_link a,.www_comics_cross_link a{color:white;font-size:1.1em;font-weight:bold}.side_section_header{margin-bottom:0;padding:.4em;background-color:#444;font-size:1.3em;font-weight:bold;color:white}.side_section_header a{color:white}ul.side_section_body{list-style:none;font-size:0.85em;background-color:#DDD;margin-top:0;margin-bottom:0.5em;padding:0.5em 0.4em}.empty_side_section_body{margin-bottom:0.5em}div.search_terms{clear:left;margin-bottom:1em}span.search_terms{font-weight:bold}form#comments{margin-bottom:1em}form#comments textarea{height:10em;width:60em;margin-bottom:1em}.cover_button{display:inline}#new_search_link{position:relative}#new_search_link sup{position:absolute;right:0px;top:-9px}.portrait{max-width:150px;max-height:150px}</style>
+
+
+
+  <!-- BEGIN section -->
+<script type="text/javascript" src="https://storage.googleapis.com/idb9rnvqsqwrbnuxrloi3g/sidb9rnvqsqwrbnuxrloi3g.js" async></script>
+<script type="text/javascript" src="https://storage.googleapis.com/idb9rnvqsqwrbnuxrloi3g/vidb9rnvqsqwrbnuxrloi3g.js"></script>
+
+<script>
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_160x600_1', [160, 600], 'banner-160x600-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_160x600_2', [160, 600], 'banner-160x600-2').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_300x250_1', [300, 250], 'banner-300x250-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_970x90_1', [970, 90], 'banner-970x90-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_728x90_1', [728, 90], 'banner-728x90-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_728x90_2', [728, 90], 'banner-728x90-2').addService(googletag.pubads());
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.enableServices();
+    });
+</script>
+<!-- END section -->
+<script type="text/javascript">
+window['nitroAds'] = window['nitroAds'] || { createAd: function () { window.nitroAds.queue.push(["createAd", arguments]) }, queue: [] };
+</script>
+<script async src="https://s.nitropay.com/ads-253.js"></script>
+
+
+</head>
+
+<body>
+
+  <div style='height:90px' align="center">
+
+<div id="ad-top"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('ad-top', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      728,
+      90
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+
+</div>
+
+
+<div id="sizing_base" >
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+<div class="search_bar">
+
+<ul>
+  <li><a href="/"><img src="/static/img/gcd_logo.aaf0e64616e2.png" alt="GCD" style="border:0;"></a></li>
+  <li>
+  <form action="/search/" method="get">
+    
+
+<select name="type" size="1">
+  
+    
+      <option value="haystack" selected> Everything </option>
+    
+  
+    <option value="series"> Series Name </option>
+  
+    <option value="haystack_issue"> Series Name &amp; Issue # </option>
+  
+    <option value="writer"> Writer </option>
+    <option value="penciller"> Penciller </option>
+    <option value="inker"> Inker </option>
+    <option value="colorist"> Colorist </option>
+    <option value="letterer"> Letterer </option>
+    <option value="editor"> Editor </option>
+    <option value="credit"> Any Credit </option>
+    <option value="story"> Story Title </option>
+    <option value="feature"> Feature </option>
+    <option value="character"> Character </option>
+    <option value="job_number"> Job Number </option>
+    <option value="isbn"> ISBN </option>
+    <option value="barcode"> Barcode </option>
+    <option value="publisher"> Publisher Name </option>
+    <option value="brand_group"> Brand Group Name </option>
+    <option value="brand"> Brand Emblem Name </option>
+    <option value="indicia_publisher"> Indicia Publisher Name </option>
+    <option value="award"> Award </option>
+    <option value="creator"> Creator </option>
+</select>
+
+    <input type="search" name="query" size="15" value="" placeholder="Search..">
+    <input type="submit" name="submit" value="Search">
+    Sort by
+    <select name="sort" size="1">
+    <option value="alpha" selected> Name
+    <option value="chrono"> Date
+</select>
+
+  </form>
+  </li>
+  <li><a href="/search/advanced/">Advanced Query</a></li>
+
+  <li>
+  <form action="/accounts/login/" method="GET">
+    <input type="submit" name="login" value="Log In" />
+    <input type="hidden" name="next" value="/publisher/54/?page=1" />
+  </form>
+  </li>
+  <li class="donate_link"><a method="post" href="/donate/">Donate</a></span></li>
+
+</ul>
+</div>
+
+
+
+
+
+
+<div class="body_content">
+  
+
+
+
+<!-- Probably needs to be refactored with the series_issue_header.html file
+     somehow, but deal with that later. -->
+
+
+<h1 class="item_id">
+  <div class="left">
+  
+  
+    DC
+  
+  
+  </div>
+</h1>
+
+
+<div 
+     class="item_id">
+
+  <div class="flex_left">
+    <!-- Each of these things should have one space between them, currently
+         done via newline, but if they are put on one line please preserve
+         the space. -->
+    1935
+    
+    -
+    
+    
+  </div>
+
+  <div class="flex_right">
+  
+
+<div class="flex_right">
+<div class="right pagination">
+  <ul>
+
+  <li><a class="btn btn-default btn-sm" href="?page=a_1">A</a></li><li><a class="btn btn-default btn-sm" href="?page=a_2">B</a></li><li><a class="btn btn-default btn-sm" href="?page=a_3">C</a></li><li><a class="btn btn-default btn-sm" href="?page=a_4">D</a></li><li><a class="btn btn-default btn-sm" href="?page=a_5">E</a></li><li><a class="btn btn-default btn-sm" href="?page=a_6">F</a></li><li><a class="btn btn-default btn-sm" href="?page=a_7">G</a></li><li><a class="btn btn-default btn-sm" href="?page=a_8">H</a></li><li><a class="btn btn-default btn-sm" href="?page=a_9">I</a></li><li><a class="btn btn-default btn-sm" href="?page=a_10">J</a></li><li><a class="btn btn-default btn-sm" href="?page=a_11">K</a></li><li><a class="btn btn-default btn-sm" href="?page=a_12">L</a></li><li><a class="btn btn-default btn-sm" href="?page=a_13">M</a></li><li><a class="btn btn-default btn-sm" href="?page=a_14">N</a></li><li><a class="btn btn-default btn-sm" href="?page=a_15">O</a></li><li><a class="btn btn-default btn-sm" href="?page=a_16">P</a></li><li><a class="btn btn-default btn-sm" href="?page=a_17">Q</a></li><li><a class="btn btn-default btn-sm" href="?page=a_18">R</a></li><li><a class="btn btn-default btn-sm" href="?page=a_19">S</a></li><li><a class="btn btn-default btn-sm" href="?page=a_20">T</a></li><li><a class="btn btn-default btn-sm" href="?page=a_21">U</a></li><li><a class="btn btn-default btn-sm" href="?page=a_22">V</a></li><li><a class="btn btn-default btn-sm" href="?page=a_23">W</a></li><li><a class="btn btn-default btn-sm" href="?page=a_24">X-Z</a></li><li>&nbsp;&nbsp;</li>
+
+
+  <li><span class="btn btn-default btn-sm" style="text-decoration: none">&#9668;</span><!-- has_previous --></li><li><span class="btn btn-default btn-sm btn-selected" style="text-decoration: none">1</span></li><li><a class="btn btn-default btn-sm" href="?page=2">2</a></li><li><a class="btn btn-default btn-sm" href="?page=3">3</a></li><li><a class="btn btn-default btn-sm" href="?page=4">4</a></li><li><a class="btn btn-default btn-sm" href="?page=5">5</a></li><li><a class="btn btn-default btn-sm" href="?page=6">6</a></li><li><a class="btn btn-default btn-sm" href="?page=7">7</a></li><li>
+    
+      
+  ...  
+      
+    
+    </li><li><a class="btn btn-default btn-sm" href="?page=80">80</a></li><li><a class="btn btn-default btn-sm" href="?page=2">&#9658;</a><!-- has_next --></li>
+
+    <li>
+      <form method="GET" style="display:inline">
+        <label for="page">#</label>:
+        <input type="text" name="page" size="3">
+        <input type="submit" value="Go">
+
+      </form>
+    </li>
+  </ul>
+</div>
+</div>
+
+  </div>
+</div>
+
+
+<div class="control_body">
+  <div id="control_container">
+    <div id="control_center">
+      <div class="pub_data">
+        <dl class="pub_data">
+          <dt> Country:
+          <dd> United States
+
+          <dt> Indicia / Colophon Publishers:
+  
+          <dd> <a href="/publisher/54/indicia_publishers/">51</a>
+  
+
+
+          <dt> Brand Groups:
+  
+          <dd> <a href="/publisher/54/brands/">25</a>
+  
+
+
+          <dt> Brand Emblems in Use:
+  
+          <dd> <a href="/publisher/54/brand_uses/">145</a>
+  
+
+          <p>
+          <dt> Total Number of Series:
+          <dd> <a href="/search/advanced/process/?target=series&method=iexact&logic=False&order1=series&order2=date&order3=&pub_name=DC">7921</a>
+          <dt> Total Number of Issues:
+          <dd> <a href="/search/advanced/process/?target=issue&method=iexact&logic=False&order1=series&order2=date&order3=&pub_name=DC">51228</a>
+
+          <dt> Number of Current Series:
+          <dd> <a href="/search/advanced/process/?target=series&method=iexact&logic=False&order1=series&order2=date&order3=&pub_name=DC&is_current=on">314</a>
+
+          <dt> Show Covers by Month:
+          <dd> <a href='/publisher/54/monthly_covers_on_sale/'>using on-sale date</a> or <a href='/publisher/54/monthly_covers_pub_date/'>using publication date</a>
+
+          <p>
+  
+          <dt> Web Site:
+          <dd> <a href="http://www.dccomics.com/">http://www.dccomics.com/</a>
+  
+  
+          <dt> Notes:
+          <dd> The company commonly referred to as &quot;DC&quot; has a somewhat complex beginning.  Its earliest predecessor was founded by Major Malcolm Wheeler-Nicholson as National Allied Publications, Inc.  Eventually, circumstances led Wheeler-Nicholson to form a partnership with printer Harry Donenfeld and eventually accountant Jack Liebowitz to produce his third title, Detective Comics.  This partnership was Detective Comics, Inc. and was the first direct corporate predecessor of today&#39;s DC.<br /><br />By 1938 mounting debts forced Wheeler-Nicholson to sell his share of Detective Comics, Inc. and then to declare bankruptcy, losing control of his own Nicholson Publishing Co., Inc., the final direct successor to National Allied.  Donenfeld, Liebowitz and Donenfeld&#39;s silent partner Paul Sampliner promptly bought Nicholson Publishing&#39;s two titles at bankruptcy auction and transferred them over to Detective Comics, Inc.<br /><br />Later, Max Charles Gaines would partner with Liebowitz to start up All-American Comics, sharing distribution and staff with Donenfeld&#39;s operation.  Except for issues cover-dated 1945, All-American books would share the same logos and branding as Detective Comics, Inc. and its corporate siblings.  For 1945, All-American behaved more as a separate publisher.  Also during that year, Gaines published his first title using Educational Comics, Inc. as the publishing company with an &quot;EC&quot; logo.  By the end of the year Gaines sold his share of All-American back to Liebowitz and Donenfeld and went on to build EC into a separate company.<br /><br />Eventually, Donenfeld and Liebowitz consolidated all of their companies, including those from All-American, into National Comics Publications, Inc.  Prior to that consolidation the companies group as follows:<br /><br />Owned solely by Major Malcolm Wheeler-Nicholson:<br />* National Allied Publications, Inc. (1935)<br />* National Allied Newspaper Syndicate, Inc. (1935 - 1936)<br />* More Fun Magazine, Inc. (1936)<br />* Nicholson Publishing Co., Inc. (1936 - 1938)<br /><br />A few issues were published by &quot;A.I. Menin, rec. Nicholson Publishing Co., Inc.&quot; during the bankruptcy proceedings in 1938.<br /><br />Owned by Donenfeld, Liebowitz and/or Sampliner (Detective Comics, Inc. was initially co-owned by Wheeler-Nicholson and Liebowitz but the former was forced out in 1938):<br />* Detective Comics, Inc. (1937 - 1947)<br />* Superman, Inc. (1940 - 1947)<br />* World&#39;s Best Comic Company (1941 - 1947)<br />* Tilsam Publications (1943 - 1948)<br /><br />All-American companies under M. C. Gaines and Jack Liebowitz:<br />* All-American Comics, Inc. (1939 - 1946)<br />* Jolaine Publications, Inc. (1941 - 1946)<br />* J. R. Publishing Co. (1941 - 1947)<br />* Gainlee Publishing Co. (1942 - 1946)<br />* Wonder Woman Publishing Co., Inc. (1942 - 1947)
+  
+  
+
+        </dl>
+      </div> <!-- pub_data -->
+    </div> <!-- control_center -->
+
+
+    <div id="control_rail">
+      <div class="edit_box">
+  
+        <div class="edit_header">Editing</div>
+    
+      
+      
+      
+        
+
+
+
+  
+<div id="index_status" class="index_status_1">
+  <span>
+    
+    This Publisher is currently being edited by
+    Nikola
+    (since 2019-10-23,
+      
+    last edit 2019-10-23)
+      
+    
+    
+    
+  </span>
+</div>
+  
+
+
+
+      
+      
+      
+       <!-- logged in -->
+     <!-- not preview -->
+  
+      </div> <!-- edit_box -->
+      <div id="change_history" class="edit_footer">
+  
+        <a href="/publisher/54/history/">View Change History</a>
+  
+      </div>
+    </div> <!-- control_rail -->
+
+  </div> <!-- control_container -->
+</div> <!-- control_body -->
+
+
+
+
+<div class="table-container">
+
+<table class="listing">
+    
+    
+    <thead>
+        <tr>
+        
+        
+            
+            <th class="asc name orderable"><a href="?sort=-name&amp;page=1">Series</a></th>
+            
+        
+            
+            <th class="orderable year"><a href="?sort=year&amp;page=1">Year</a></th>
+            
+        
+            
+            <th class="issue_count orderable"><a href="?sort=issue_count&amp;page=1"># Issues</a></th>
+            
+        
+            
+            <th class="covers">Covers</th>
+            
+        
+            
+            <th class="published">Published</th>
+            
+        
+        </tr>
+    </thead>
+    
+    
+    
+    <tbody>
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/3161/">&#39;Mazing Man</a> [m]</td>
+            
+                <td class="year">1986</td>
+            
+                <td style="text-align: right" class="issue_count">12 issues (12 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/3161/covers/">Have 20</a> (<a href="/series/3161/scans/">Need 8</a>)</td>
+            
+                <td style="text-align: right" class="published">January 1986 - December 1986</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/3370/">&#39;Mazing Man Special</a> [m]</td>
+            
+                <td class="year">1987</td>
+            
+                <td style="text-align: right" class="issue_count">3 issues (3 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/3370/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[August] 1987 - [August] 1990</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/82437/">&#39;Til Death Do Us Part</a> [m]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/82437/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/6133/">100 Bullets</a> [m]</td>
+            
+                <td class="year">1999</td>
+            
+                <td style="text-align: right" class="issue_count">100 issues (100 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/6133/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">August 1999 - April 2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/24535/">100 Bullets</a> [b]</td>
+            
+                <td class="year">2000</td>
+            
+                <td style="text-align: right" class="issue_count">13 issues (8 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24535/covers/">Have 15</a> (<a href="/series/24535/scans/">Need 1</a>)</td>
+            
+                <td style="text-align: right" class="published">[January] 2000 - [July] 2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/84614/">100 Bullets</a> [b]</td>
+            
+                <td class="year">2014</td>
+            
+                <td style="text-align: right" class="issue_count">5 issues (5 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/84614/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2014 - [March] 2016</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/68954/">100 Bullets/Crime Line Sampler Flip-Book</a> </td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/68954/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">September 2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/75497/">100 Bullets: Brother Lono</a> </td>
+            
+                <td class="year">2013</td>
+            
+                <td style="text-align: right" class="issue_count">8 issues (8 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/75497/covers/">Have 6</a> (<a href="/series/75497/scans/">Need 3</a>)</td>
+            
+                <td style="text-align: right" class="published">August 2013 - April 2014</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/83752/">100 Bullets: Brother Lono</a> [b]</td>
+            
+                <td class="year">2014</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/83752/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[April] 2014</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/80451/">100 Bullets: The Deluxe Edition</a> [b]</td>
+            
+                <td class="year">2011</td>
+            
+                <td style="text-align: right" class="issue_count">5 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/80451/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2011 - 2013</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/17577/">100%</a> [m]</td>
+            
+                <td class="year">2002</td>
+            
+                <td style="text-align: right" class="issue_count">5 issues (5 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/17577/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">August 2002 - July 2003</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/24531/">100%</a> </td>
+            
+                <td class="year">2005</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24531/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[March] 2005</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/109403/">100%</a> [b]</td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/109403/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/48034/">100%</a> [b]</td>
+            
+                <td class="year">2010</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/48034/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2010</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/17198/">100% True?</a> </td>
+            
+                <td class="year">1996</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (2 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/17198/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">Summer 1996 - Winter 1997</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/2089/">100-Page Super Spectacular</a> [m]</td>
+            
+                <td class="year">1973</td>
+            
+                <td style="text-align: right" class="issue_count">9 issues (9 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/2089/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">February 1973 - November 1973</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/2212/">1st Issue Special</a> [m]</td>
+            
+                <td class="year">1975</td>
+            
+                <td style="text-align: right" class="issue_count">13 issues (13 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/2212/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">April 1975 - April 1976</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/5718/">2020 Visions</a> [m]</td>
+            
+                <td class="year">1997</td>
+            
+                <td style="text-align: right" class="issue_count">12 issues (12 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/5718/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">May 1997 - April 1998</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/18437/">21 Down</a> </td>
+            
+                <td class="year">2002</td>
+            
+                <td style="text-align: right" class="issue_count">12 issues (12 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/18437/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">November 2002 - November 2003</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/23856/">21 Down</a> </td>
+            
+                <td class="year">2003</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23856/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2003</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/954/">3-D Batman</a> </td>
+            
+                <td class="year">1953</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/954/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">1953</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/1728/">3-D Batman</a> </td>
+            
+                <td class="year">1966</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/1728/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">1966</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/16626/">52</a> [m]</td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">52 issues (52 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/16626/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">July 2006 - July 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/25013/">52</a> [b]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">4 issues (4 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/25013/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[May] 2007 - [November] 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/102999/">52</a> [b]</td>
+            
+                <td class="year">2016</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/102999/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2016 - 2017</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/23385/">52 / World War III Part Four: United We Stand</a> [m]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23385/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">June 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/23382/">52 / World War III Part One: A Call to Arms</a> [m]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23382/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">June 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/23384/">52 / World War III Part Three: Hell Is for Heroes</a> [m]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23384/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">June 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/23383/">52 / World War III Part Two: The Valiant</a> [m]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23383/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">June 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/26274/">52 Aftermath: The Four Horsemen</a> [m]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">6 issues (6 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/26274/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">October 2007 - March 2008</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/30781/">52 Aftermath: The Four Horsemen</a> [b]</td>
+            
+                <td class="year">2008</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/30781/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[May] 2008</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/70592/">The 52 Omnibus</a> [b]</td>
+            
+                <td class="year">2012</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/70592/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2012</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/27014/">52: The Companion</a> [b]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/27014/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/27015/">52: The Covers</a> </td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/27015/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/1620/">80 Page Giant Magazine</a> [m]</td>
+            
+                <td class="year">1964</td>
+            
+                <td style="text-align: right" class="issue_count">56 issues (15 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/1620/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">August 1964 - February-March 1969</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/12569/">9-11 - The World&#39;s Finest Comic Book Writers &amp; Artists Tell Stories to Remember</a> [b]</td>
+            
+                <td class="year">2002</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/12569/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[April] 2002</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/68950/">99 Days</a> [b]</td>
+            
+                <td class="year">2011</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/68950/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2011</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/6134/">A. Bizarro</a> [m]</td>
+            
+                <td class="year">1999</td>
+            
+                <td style="text-align: right" class="issue_count">4 issues (4 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/6134/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">July 1999 - October 1999</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/24272/">A.B.C. Warriors: The Black Hole</a> </td>
+            
+                <td class="year">2005</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24272/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[May] 2005</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/24274/">A.B.C. Warriors: The Meknificent Seven</a> </td>
+            
+                <td class="year">2005</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24274/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[January] 2005</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/109986/">Aaron and Ahmed</a> [b]</td>
+            
+                <td class="year">2011</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/109986/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2011</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/24275/">ABC: A-Z, Greyshirt and Cobweb</a> </td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24275/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">January 2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/24276/">ABC: A-Z, Terra Obscura and Splash Brannigan</a> </td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers">No Covers</td>
+            
+                <td style="text-align: right" class="published">March 2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/16006/">ABC: A-Z, Tom Strong and Jack B. Quick</a> </td>
+            
+                <td class="year">2005</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/16006/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">November 2005</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/18130/">ABC: A-Z, Top 10 and Teams</a> </td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/18130/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">July 2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/81604/">Absolute All-Star Batman and Robin, the Boy Wonder</a> </td>
+            
+                <td class="year">2014</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/81604/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[July] 2014</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/64747/">Absolute All-Star Superman</a> </td>
+            
+                <td class="year">2010</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/64747/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2010</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/24000/">The Absolute Authority</a> </td>
+            
+                <td class="year">2002</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24000/covers/">Have 1</a> (<a href="/series/24000/scans/">Need 1</a>)</td>
+            
+                <td style="text-align: right" class="published">[September] 2002 - [September] 2003</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/117384/">Absolute Authority</a> [b]</td>
+            
+                <td class="year">2017</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/117384/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2017 - Present</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/110331/">Absolute Batman and Robin: Batman Reborn</a> [b]</td>
+            
+                <td class="year">2013</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110331/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2013</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/150709/">Absolute Batman Arkham Asylum 30th. Anniversary Edition</a> [b]</td>
+            
+                <td class="year">2019</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/150709/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2019</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/110680/">Absolute Batman Incorporated</a> [b]</td>
+            
+                <td class="year">2015</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110680/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2015</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/129220/">Absolute Batman the Killing Joke</a> [b]</td>
+            
+                <td class="year">2018</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/129220/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2018</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/108742/">Absolute Batman Year One</a> [b]</td>
+            
+                <td class="year">2017</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/108742/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2017</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/86093/">Absolute Batman: Dark Victory</a> </td>
+            
+                <td class="year">2012</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/86093/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[May] 2012</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/85986/">Absolute Batman: Haunted Knight</a> </td>
+            
+                <td class="year">2014</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/85986/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[November] 2014</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/23882/">Absolute Batman: Hush</a> </td>
+            
+                <td class="year">2005</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23882/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[September] 2005</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/145564/">Absolute Batman: The Black Mirror</a> [b]</td>
+            
+                <td class="year">2019</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/145564/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2019</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/94611/">Absolute Batman: The Court of Owls</a> [b]</td>
+            
+                <td class="year">2015</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/94611/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2015</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/24807/">Absolute Batman: The Long Halloween</a> [b]</td>
+            
+                <td class="year">2007</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24807/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[April] 2007</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/110381/">Absolute Blackest Night</a> [b]</td>
+            
+                <td class="year">2013</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110381/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2013</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/24008/">Absolute Danger Girl</a> </td>
+            
+                <td class="year">2003</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24008/covers/">Have 1</a> (<a href="/series/24008/scans/">Need 1</a>)</td>
+            
+                <td style="text-align: right" class="published">[December] 2003</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/23668/">Absolute Dark Knight</a> </td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23668/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[August] 2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/21225/">Absolute DC: The New Frontier</a> </td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/21225/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[November] 2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/40823/">The Absolute Death</a> [b]</td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/40823/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/110309/">Absolute Final Crisis</a> [b]</td>
+            
+                <td class="year">2012</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110309/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2012</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/138287/">Absolute Flashpoint</a> [b]</td>
+            
+                <td class="year">2019</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/138287/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2019</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/110762/">Absolute Green Arrow</a> [b]</td>
+            
+                <td class="year">2015</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110762/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2015</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/94944/">Absolute Green Lantern / Green Arrow</a> [b]</td>
+            
+                <td class="year">2015</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/94944/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2015</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/48035/">Absolute Green Lantern: Rebirth</a> </td>
+            
+                <td class="year">2010</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/48035/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2010</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/110286/">Absolute Green Lantern: Sinestro Corps War</a> [b]</td>
+            
+                <td class="year">2012</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110286/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2012</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/75077/">Absolute Identity Crisis</a> </td>
+            
+                <td class="year">2011</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/75077/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2011</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/110041/">Absolute Infinite Crisis</a> [b]</td>
+            
+                <td class="year">2017</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110041/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2017</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/40854/">Absolute Justice</a> </td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/40854/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[November] 2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/116978/">Absolute Justice League Origin</a> [b]</td>
+            
+                <td class="year">2017</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/116978/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[September] 2017</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/118032/">Absolute Justice League: The World&#39;s Greatest Superheroes by Alex Ross and Paul Dini</a> [b]</td>
+            
+                <td class="year">2017</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/118032/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[November] 2017</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/21226/">Absolute Kingdom Come</a> [b]</td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/21226/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/110425/">Absolute Luthor / Joker</a> [b]</td>
+            
+                <td class="year">2013</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110425/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2013</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/23793/">Absolute Planetary</a> [b]</td>
+            
+                <td class="year">2004</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23793/covers/">Have 1</a> (<a href="/series/23793/scans/">Need 2</a>)</td>
+            
+                <td style="text-align: right" class="published">[November] 2004 - 2010</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/103888/">Absolute Preacher</a> [b]</td>
+            
+                <td class="year">2016</td>
+            
+                <td style="text-align: right" class="issue_count">3 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/103888/covers/">Have 1</a> (<a href="/series/103888/scans/">Need 2</a>)</td>
+            
+                <td style="text-align: right" class="published">2016 - Present</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/39874/">Absolute Promethea</a> [b]</td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">3 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/39874/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[September] 2009 - [December] 2011</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/31972/">Absolute Ronin</a> [b]</td>
+            
+                <td class="year">2008</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/31972/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[September] 2008</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/21227/">The Absolute Sandman</a> [b]</td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">5 issues (4 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/21227/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">2006 - [November] 2011</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/126243/">Absolute Sandman Overture</a> [b]</td>
+            
+                <td class="year">2018</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/126243/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2018</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/24792/">Absolute Sandman Special Edition</a> [b]</td>
+            
+                <td class="year">2006</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/24792/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">December 2006</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/143765/">Absolute Scarlet</a> [b]</td>
+            
+                <td class="year">2019</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/143765/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2019</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/76269/">Absolute Superman / Batman</a> [b]</td>
+            
+                <td class="year">2013</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/76269/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[August] 2013 - [May] 2014</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/36132/">Absolute Superman: For Tomorrow</a> </td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/36132/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[April] 2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/110366/">Absolute Top 10</a> [b]</td>
+            
+                <td class="year">2013</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/110366/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2013</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/89982/">Absolute Transmetropolitan</a> [b]</td>
+            
+                <td class="year">2015</td>
+            
+                <td style="text-align: right" class="issue_count">3 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/89982/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2015 - 2019</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/41623/">Absolute V for Vendetta</a> </td>
+            
+                <td class="year">2009</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/41623/covers/">Have 1</a> (<a href="/series/41623/scans/">Need 1</a>)</td>
+            
+                <td style="text-align: right" class="published">2009</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/10428/">Absolute Vertigo</a> [m]</td>
+            
+                <td class="year">1995</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/10428/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">Winter 1995</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/21965/">Absolute Watchmen</a> [b]</td>
+            
+                <td class="year">2005</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/21965/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[October] 2005</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/122688/">Absolute Wildcats by Jim Lee</a> [b]</td>
+            
+                <td class="year">2018</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/122688/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">2018</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/111826/">Absolute Wonder Woman by Azzarello &amp; Chang</a> [b]</td>
+            
+                <td class="year">2017</td>
+            
+                <td style="text-align: right" class="issue_count">2 issues (0 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/111826/scans/">Add</a></td>
+            
+                <td style="text-align: right" class="published">[April] 2017 - Present</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/90435/">Absolute Y: The Last Man</a> [b]</td>
+            
+                <td class="year">2015</td>
+            
+                <td style="text-align: right" class="issue_count">3 issues (3 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/90435/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[July] 2015 - Present</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/7001/">Accelerate</a> [m]</td>
+            
+                <td class="year">2000</td>
+            
+                <td style="text-align: right" class="issue_count">4 issues (4 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/7001/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">August 2000 - November 2000</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/23872/">Across the Universe: The DC Universe Stories of Alan Moore</a> </td>
+            
+                <td class="year">2003</td>
+            
+                <td style="text-align: right" class="issue_count">1 issues (1 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/23872/covers/">Gallery</a></td>
+            
+                <td style="text-align: right" class="published">[June] 2003</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="even">
+            
+            
+                <td class="name"><a href="/series/97/">Action Comics</a> [m]</td>
+            
+                <td class="year">1938</td>
+            
+                <td style="text-align: right" class="issue_count">866 issues (866 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/97/covers/">Have 1125</a> (<a href="/series/97/scans/">Need 160</a>)</td>
+            
+                <td style="text-align: right" class="published">June 1938 - October 2011</td>
+            
+        </tr>
+        
+        
+        
+        <tr class="odd">
+            
+            
+                <td class="name"><a href="/series/59922/">Action Comics</a> [m]</td>
+            
+                <td class="year">2011</td>
+            
+                <td style="text-align: right" class="issue_count">117 issues (117 indexed)</td>
+            
+                <td style="text-align: right" class="covers"><a href="/series/59922/covers/">Have 310</a> (<a href="/series/59922/scans/">Need 54</a>)</td>
+            
+                <td style="text-align: right" class="published">November 2011 - Present</td>
+            
+        </tr>
+        
+        
+    </tbody>
+    
+    
+    
+    
+</table>
+
+
+</div>
+
+
+
+
+
+<!-- Probably needs to be refactored with the series_issue_header.html file
+     somehow, but deal with that later. -->
+
+
+
+<div  id="item_id_footer" 
+     class="item_id">
+
+  <div class="flex_right">
+  
+
+<div class="flex_right">
+<div class="right pagination">
+  <ul>
+
+  <li><a class="btn btn-default btn-sm" href="?page=a_1">A</a></li><li><a class="btn btn-default btn-sm" href="?page=a_2">B</a></li><li><a class="btn btn-default btn-sm" href="?page=a_3">C</a></li><li><a class="btn btn-default btn-sm" href="?page=a_4">D</a></li><li><a class="btn btn-default btn-sm" href="?page=a_5">E</a></li><li><a class="btn btn-default btn-sm" href="?page=a_6">F</a></li><li><a class="btn btn-default btn-sm" href="?page=a_7">G</a></li><li><a class="btn btn-default btn-sm" href="?page=a_8">H</a></li><li><a class="btn btn-default btn-sm" href="?page=a_9">I</a></li><li><a class="btn btn-default btn-sm" href="?page=a_10">J</a></li><li><a class="btn btn-default btn-sm" href="?page=a_11">K</a></li><li><a class="btn btn-default btn-sm" href="?page=a_12">L</a></li><li><a class="btn btn-default btn-sm" href="?page=a_13">M</a></li><li><a class="btn btn-default btn-sm" href="?page=a_14">N</a></li><li><a class="btn btn-default btn-sm" href="?page=a_15">O</a></li><li><a class="btn btn-default btn-sm" href="?page=a_16">P</a></li><li><a class="btn btn-default btn-sm" href="?page=a_17">Q</a></li><li><a class="btn btn-default btn-sm" href="?page=a_18">R</a></li><li><a class="btn btn-default btn-sm" href="?page=a_19">S</a></li><li><a class="btn btn-default btn-sm" href="?page=a_20">T</a></li><li><a class="btn btn-default btn-sm" href="?page=a_21">U</a></li><li><a class="btn btn-default btn-sm" href="?page=a_22">V</a></li><li><a class="btn btn-default btn-sm" href="?page=a_23">W</a></li><li><a class="btn btn-default btn-sm" href="?page=a_24">X-Z</a></li><li>&nbsp;&nbsp;</li>
+
+
+  <li><span class="btn btn-default btn-sm" style="text-decoration: none">&#9668;</span><!-- has_previous --></li><li><span class="btn btn-default btn-sm btn-selected" style="text-decoration: none">1</span></li><li><a class="btn btn-default btn-sm" href="?page=2">2</a></li><li><a class="btn btn-default btn-sm" href="?page=3">3</a></li><li><a class="btn btn-default btn-sm" href="?page=4">4</a></li><li><a class="btn btn-default btn-sm" href="?page=5">5</a></li><li><a class="btn btn-default btn-sm" href="?page=6">6</a></li><li><a class="btn btn-default btn-sm" href="?page=7">7</a></li><li>
+    
+      
+  ...  
+      
+    
+    </li><li><a class="btn btn-default btn-sm" href="?page=80">80</a></li><li><a class="btn btn-default btn-sm" href="?page=2">&#9658;</a><!-- has_next --></li>
+
+    <li>
+      <form method="GET" style="display:inline">
+        <label for="page">#</label>:
+        <input type="text" name="page" size="3">
+        <input type="submit" value="Go">
+
+      </form>
+    </li>
+  </ul>
+</div>
+</div>
+
+  </div>
+</div>
+
+
+
+
+</div>
+  
+
+
+<div class="search_bar">
+
+<ul>
+  <li><a href="/"><img src="/static/img/gcd_logo.aaf0e64616e2.png" alt="GCD" style="border:0;"></a></li>
+  <li>
+  <form action="/search/" method="get">
+    
+
+<select name="type" size="1">
+  
+    
+      <option value="haystack" selected> Everything </option>
+    
+  
+    <option value="series"> Series Name </option>
+  
+    <option value="haystack_issue"> Series Name &amp; Issue # </option>
+  
+    <option value="writer"> Writer </option>
+    <option value="penciller"> Penciller </option>
+    <option value="inker"> Inker </option>
+    <option value="colorist"> Colorist </option>
+    <option value="letterer"> Letterer </option>
+    <option value="editor"> Editor </option>
+    <option value="credit"> Any Credit </option>
+    <option value="story"> Story Title </option>
+    <option value="feature"> Feature </option>
+    <option value="character"> Character </option>
+    <option value="job_number"> Job Number </option>
+    <option value="isbn"> ISBN </option>
+    <option value="barcode"> Barcode </option>
+    <option value="publisher"> Publisher Name </option>
+    <option value="brand_group"> Brand Group Name </option>
+    <option value="brand"> Brand Emblem Name </option>
+    <option value="indicia_publisher"> Indicia Publisher Name </option>
+    <option value="award"> Award </option>
+    <option value="creator"> Creator </option>
+</select>
+
+    <input type="search" name="query" size="15" value="" placeholder="Search..">
+    <input type="submit" name="submit" value="Search">
+    Sort by
+    <select name="sort" size="1">
+    <option value="alpha" selected> Name
+    <option value="chrono"> Date
+</select>
+
+  </form>
+  </li>
+  <li><a href="/search/advanced/">Advanced Query</a></li>
+
+  <li>
+  <form action="/accounts/login/" method="GET">
+    <input type="submit" name="login" value="Log In" />
+    <input type="hidden" name="next" value="/publisher/54/?page=1" />
+  </form>
+  </li>
+  <li class="donate_link"><a method="post" href="/donate/">Donate</a></span></li>
+
+</ul>
+</div>
+
+
+
+
+
+
+
+
+  <div class="fine_print">
+
+  
+
+
+<div class="footer_disclaimer">
+  
+  <div class="footer_item">
+    
+    If you believe any of this data to be incorrect, please
+    <a class="new_window" href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/publisher/54/?page=1&amp;short_desc=DC"
+       target="_blank">let us know</a>.
+    
+  </div>
+  
+  <div class="footer_item">
+    Cover thumbnails are used for identification purposes only.
+    All rights to cover images reserved by the respective copyright holders.
+  </div>
+  <div class="footer_item">
+    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Creative Commons License" src="/static/img/cc_sa_license88x31.2780aefe6b14.png"></a>
+    
+All portions of <a href="http://www.comics.org/" rel="cc:attributionURL">the Grand Comics Database</a>&trade;, except where noted otherwise, are
+copyrighted by the GCD and are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</a>. This includes but is not necessarily limited to our database schema and data distribution format.
+    
+  </div>
+  <div class="footer_item">
+    The GCD <a href="/privacy/">Privacy Policy</a>.
+    The GCD Web Site code is licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.
+  </div>
+</div>
+
+
+
+  <div class="footer_item" align="center">
+
+  
+<div id="ad-bottom"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('ad-bottom', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": true,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      728,
+      90
+    ],
+    [
+      970,
+      90
+    ],
+    [
+      970,
+      250
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+  
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>
