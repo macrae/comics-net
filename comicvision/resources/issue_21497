@@ -1,0 +1,3909 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <title>
+  GCD :: Issue :: Strange Adventures #207
+</title>
+  <link rel="shortcut icon" href="/static/img/favicon.40fb80aab625.ico">
+
+
+<style type="text/css">body{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:100%;margin:0}#sizing_base{font-size:0.9em}div.body_content{margin:0 8px}.left{float:left}.right{float:right}.flex_left{}.flex_right{flex:1;text-align:right}#RightSearchColumn{margin-left:168px}#LeftSearchColumn{float:left;width:163px}#beta_warning{font-size:1.5em;background-color:red;color:yellow;border:dashed 4px black;margin-bottom:1em}#special_banner{font-size:1.4em;background-color:#EE7;margin-bottom:0em;padding:0.3em}#survey_banner{background-color:palegreen;font-size:1.4em;margin-bottom:0.5em;padding:0.3em}#survey_top_spacer #survey_banner{margin-top:0.5em}#preview_banner{font-weight:bold;background-color:orange;padding:0.3em 0 0.3em 0;margin-bottom:0.5em}#preview_banner_inner{padding:0 0.3em 0 0.3em}.preview{background-color:#FFE944}h1{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:2em;clear:both}h2{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:1.5em}h3{font-family:Helvetica,Arial,Verdana,sans-serif;font-size:1.2em}h4{font-size:1em}hr{width:100%;clear:both}hr.divider{clear:left;visibility:hidden}dt{font-weight:bold}h1.item_id{float:left}img .cover_img{color:white;background-color:black}h3.stats{padding:0.2em 0;margin-top:0;margin-bottom:0;background-color:#444;color:white;font-weight:bold;width:100%}div.stats{width:49%;float:left;margin:0.5em 0.5%}div.stats_content{padding-left:8px}div.stats_header{padding-left:8px;line-height:1.5em}.item_id{margin:0 -8px;padding:0 8px;margin-top:0;margin-bottom:0;background-color:#444;color:white;font-weight:bold;width:100%;display:flex;align-items:center}#item_id_footer{margin-bottom:0.5em}#item_id_footer_replace_top{}#item_id_footer_replace_bottom{margin-bottom:1em}.item_id :link,.stats :link{color:white;text-decoration:underline}.item_id :visited,.stats :link{color:white}.item_id .left{flex:None}.item_id .right{flex:1;text-align:right}.item_id .pagination{font-weight:normal}.pagination ul{list-style-type:none;margin:0;overflow:hidden}.pagination li{line-height:1.8em;float:left}.btn{border:1px solid black;display:block;margin-left:-1px;padding:0 0.4em}a.btn:link{text-decoration:none}.btn-selected{background-color:DarkGray}a.btn:hover{background-color:DarkGray;color:DarkSlateGray;text-decoration:none}div.item_id{background-color:#EEE;color:black;float:left;clear:both;border-top:none}div.item_id :link{color:black}div.item_id :visited{color:black}div.prev_next{font-weight:normal}a:link,h1 a:visited{text-decoration:None;color:#00e}a:visited{text-decoration:None;color:#0645ad}a:hover{text-decoration:underline}h1.search_id{font-size:1.25em}.search_id_nav img{border:0px}#search_reminder,#bulk_change_info{float:left;margin-top:1em}.search_bar,#plain_bar{clear:both;background-color:#66E;color:black}.my_search_bar{clear:both;background-color:#A9302A;color:white}.search_bar ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#66E}.my_search_bar ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#A9302A}.search_bar li,.my_search_bar li{line-height:40px;float:left}.search_bar li a,.search_bar li form,.my_search_bar li a,.my_search_bar li form{padding:0.3em 0.6em;display:block;color:black;text-decoration:none}.search_bar li a:hover{background-color:#b3cff8;color:DarkSlateGray;text-decoration:none;f}.my_search_bar li a:hover{background-color:#B96C68;color:Gainsboro;text-decoration:none}.donate_link{background-color:#FFA500}.search_bar img,.my_search_bar img,#plain_bar img{height:40px;position:relative;top:1em;margin-top:-1em;padding:0 1em}.search_bar :link{color:white}.search_bar :visited{color:white}.my_search_bar :link,.my_search_bar :visited{color:white}#plain_bar span{font-size:1.2em;font-weight:bold}#plain_bar :visited{color:black}.fine_print{float:left;clear:left;margin-top:1em}.control_body{padding:0 15.25em 0 0}#control_container{float:left;width:100%;border-right:15.25em;margin-right:-15.25em;display:inline}#control_center{float:left;width:100%;margin-right:-100%}#control_rail{float:right;width:15.25em;margin-right:-15.25em;position:relative}#control_header,#control_footer{margin-right:-15.25em;clear:both}.edit_box{margin-top:1em;margin-bottom:0;font-size:0.9em}.edit_box form{margin:2px}.edit_header{font-weight:bold;background-color:#DDD;margin:0;padding:0.4em}.edit_footer{background-color:#DDD;margin:0;margin-bottom:1em;padding:0.4em}.edit_label{font-size:1.2em;margin:2px}.cant_delete{color:gray}#change_history{font-size:0.9em;font-weight:bold;text-align:center}#change_history a{color:black}div.covers{margin:1em 0;display:flex;flex-wrap:wrap}div.issue_covers{margin:1em 0;width:100%;display:flex;flex-wrap:wrap;justify-content:center}.covers div.marked{background-color:#DDD}.no_cover{border:solid 1px black}.cover_links{font-size:0.7em;white-space:nowrap}.cover_caption{font-size:0.75em}.cover_number{font-weight:bold}.cover_grid_flex{text-align:center;vertical-align:top;width:140px;margin:2px 4px}.cover_grid{text-align:center;vertical-align:top;width:20%}.cover_grid img{background-color:black;color:black}.cover_grid img :link{color:black}.cover_grid img :visited{color:#666}.cover_grid .wraparound_cover_img,#cover_uploaded .wraparound_cover_img,.cover_grid_flex .wraparound_cover_img{background-color:black;color:black;margin-left:15px;padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#cover_zoom{text-align:center}#cover_zoom img{margin-top:1em;margin-bottom:1em}#cover_zoom .wraparound_cover_img{margin-top:1em;margin-bottom:1em;padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#cover_zoom .cover_links{font-size:1em;margin-bottom:1em}form.before_listing{margin-top:1em;float:left}.facet_listing summary{margin-top:1em;text-align:left;background-color:rgb(136,136,136);color:white;font-weight:bold;width:10.25em;padding:0.4em}.facet_listing table{border-collapse:collapse;width:11em;border-style:hidden}.listing{float:left;clear:both;border-collapse:collapse;border-style:hidden;margin-top:1em;margin-bottom:1em}#publisher_detail_listing{margin-top:0}.listing th{text-align:center;padding:.4em;background-color:#888;color:white}.listing td,.facet_listing td{padding:.4em .5em}.listing tr.odd,tr.row_even_False,tr.listing_odd{background-color:#FFF;vertical-align:top}.listing tr.even,tr.row_even_True,tr.listing_even{background-color:#DDD;vertical-align:top}td.listing_publisher{border-left:none}td.listing_country{border-right:none}div.list_table_header{margin-bottom:1em}.listing dl{margin-top:0}.listing dl.credits{margin-bottom:0}.listing dl.credits dt{float:left;clear:both;padding-right:0.25em}.listing dl.credits dd{margin:0}dt.credit_tag::after{content:":"}div.updated_issues ul{list-style:none;margin:0 0.4em 0 0;padding:0}input.wide{width:60em}input.medium{width:30em}.pub_data{margin-right:0.5em}dl.pub_data{float:left;width:100%;margin-top:1em}dl.pub_data dt{padding-right:0.5em;float:left;clear:left}dl.pub_data dd{float:none;padding:0;margin:0}.embedded_flag{height:1em;vertical-align:middle}#index_status{padding:0.4em 0.4em 0.4em 0.4em}#index_status :visited,#index_status :link{color:black}#index_status_inner{margin:0 0.4em 0 0.4em}.index_status_available,.index_status_0{background-color:#EE7}.index_status_editing,.index_status_1{background-color:#E77}.index_status_reviewing,.index_status_4,.index_status_pending,.index_status_2,.index_status_discussed,.index_status_3{background-color:#EA7}div.ongoing_status{padding:0.4em 0.4em 0.4em 0.4em;background-color:#AEA}div.ongoing_status form{}.control_panel{clear:both}.publisher_list_control_panel{clear:both}.publisher_list_control_panel form{margin-top:1em;margin-right:1em;margin-bottom:1em;float:left;display:inline}.message{font-weight:bold}.hidden{display:none}.select_heading{width:8em}.error_message{color:red;font-weight:bold;margin:1em 0;float:left;clear:both}.error_message_text{color:red;font-weight:bold}.footer_disclaimer{float:left;font-size:0.8em;color:#666;margin:0.5em}.footer_disclaimer img{border-width:0}.footer_item{margin-bottom:1em}a.new_window{padding-right:13px;background:transparent no-repeat right center url("/static/css/gcd/external.8ea7563eac77.png?2e7e2b0e0d1d");position:relative;z-index:1}a.new_window:hover span{display:block;position:absolute;left:0em;width:11em;border:1px solid black;background-color:#FFF;color:#000;text-align:center;padding:5px}a.link_info_left{position:relative;z-index:1;text-decoration:none}a.link_info_left:hover,a.new_window:hover{z-index:2}a.link_info_left span,a.new_window span{display:none}a.link_info_left:hover span{display:block;position:absolute;left:-11em;width:10em;border:1px solid black;background-color:#DDD;color:#000;text-align:center;padding:5px;font-size:0.9em}#donate_table{width:100%;border:solid 1px;border-spacing:0}#donate_table td{text-align:center;width:33%;padding:0.4em}#donate_table th{font-weight:bold;padding:0.4em;background-color:#444;color:white}.my_comics_cross_link{margin-bottom:0.5em;padding:.4em;background-color:#A9302A;text-align:center}.www_comics_cross_link{margin-bottom:0.5em;padding:.4em;background-color:#66E;text-align:center}.my_comics_cross_link a,.www_comics_cross_link a{color:white;font-size:1.1em;font-weight:bold}.side_section_header{margin-bottom:0;padding:.4em;background-color:#444;font-size:1.3em;font-weight:bold;color:white}.side_section_header a{color:white}ul.side_section_body{list-style:none;font-size:0.85em;background-color:#DDD;margin-top:0;margin-bottom:0.5em;padding:0.5em 0.4em}.empty_side_section_body{margin-bottom:0.5em}div.search_terms{clear:left;margin-bottom:1em}span.search_terms{font-weight:bold}form#comments{margin-bottom:1em}form#comments textarea{height:10em;width:60em;margin-bottom:1em}.cover_button{display:inline}#new_search_link{position:relative}#new_search_link sup{position:absolute;right:0px;top:-9px}.portrait{max-width:150px;max-height:150px}dl{float:left;width:100%;margin-top:0}dt{float:left;padding-right:0.25em}dd{float:left;margin:0 0.5em 0 0}div#format{margin-top:0;margin-bottom:1em;float:left}#format_tag{font-weight:bold;float:left}#format_data{float:left}#issue_data{float:left;width:100%}#issue_data p{margin-top:0.4em}#issue_data_list{padding-top:1em;margin-bottom:0}#issue_data_list dt::after,dl.issue_format dt::after{content:":"}#series_date{font-weight:bold;margin-bottom:0}#story_toc{font-size:0.85em;margin:0 0 1em 0;padding:0;list-style:none}#story_toc li{padding:0.4em}.toc_story_title{}#story_toc li.odd{background-color:#FFF}#story_toc li.even{background-color:#DDD}a.cache_link{color:black;font-weight:normal}.issue_cover_links{float:left;clear:left;font-size:0.75em;width:200px}#cover_data{clear:left;margin-right:1.5em}.cover{padding-top:0;overflow:hidden;padding-left:225px;margin-bottom:0.5em}.coverContainer{width:100%;border-left:225px solid white;margin-left:-225px;display:inline;float:left}.coverContent{width:100%;float:right;position:relative}.coverImage{float:left;width:223px;margin-left:-225px}.coverImage img{}.coverImage .wraparound_cover_img{padding-right:15px;background:transparent no-repeat right center url("/static/css/gcd/foldoutarrow_100.8ee1d0ff45f1.png?2e7e2b0e0d1d")}#index_credits{clear:both;padding:0;font-size:0.85em;margin-bottom:1em}#indexers_header{font-weight:bold;background-color:#DDD;margin:0;padding:0.4em}#index_credits ul{margin:0.4em}div.issue_notes{clear:left;margin-right:1.5em}div.issue_notes_border{width:100%;float:left}div.issue_notes h3{clear:both;background-color:#DDD;padding:0.2em 6px;margin-top:0;margin-bottom:0.15em}div.issue_notes p{padding:0.2em 6px;margin:0 0 0.5em 0}div.issue_notes dt{padding-left:6px}.credit_header{clear:both}.single_story dl.credits{margin-bottom:0.5em}.single_story dt{padding-left:6px}dl.credits dt{clear:left;padding-right:0.5em;width:70px;text-align:right}dl.credits dd{float:none;margin:0;padding:0}hr.content_header{clear:both;height:4px;background-color:rgb(221,221,221);border:none}.single_story dl.contents{margin-bottom:0.15em}dl.contents dt{clear:left}dl.contents dd{clear:left;margin-bottom:0.5em;padding-left:6px}dl.contents dd.short{clear:none;padding-left:0}.title{}#story_data,#cover_data{clear:left;margin-bottom:1em;margin-right:1.5em}.offset_one_back{position:relative;left:-1px}div.single_story{float:left;width:100%}.single_story h2{clear:both;padding:0.1em 6px;float:left}.single_story h3{clear:both;background-color:#DDD;padding:0.1em 6px;margin-top:0;margin-bottom:0.15em}div.non_comics{border:solid black 2px;float:left;width:100%;margin-bottom:1em}.non_comics h3{float:left;background-color:#66E;color:black;margin-top:0;margin-bottom:0;font-weight:normal}.single_story h4{clear:both;padding:0.1em 6px}.single_story dl{padding:0.1em 0;margin:0}.single_story_navigation a{color:white;font-size:0.8em;font-weight:normal}.single_story p{padding:0.1em 6px;margin:0 0 0.5em 0}.single_story .left,.non_comics .left{padding-left:6px}.single_story .right{padding-right:6px}.sequence_header{background-color:#DDD}h3.feature{margin-bottom:0;margin-top:0;width:100%;float:left;padding:0.1em 0}h3.feature a{color:#000}h2.title{background-color:#444;color:white;margin-top:0;margin-bottom:0;font-weight:normal;padding:0.1em 0;width:100%}span.feature{font-weight:bold}span.seq_no{font-size:0.8em;font-weight:bold}span.type,span.non_bold{font-weight:normal}p.type_page{margin-top:0.5em}span.linkify{border:solid #666 1px;padding:0 0.2em;color:#888;font-size:0.9em}span.linkify :link{color:#888;text-decoration:none}span.linkify :visited{color:#888;text-decoration:none}</style>
+
+
+
+  <!-- BEGIN section -->
+<script type="text/javascript" src="https://storage.googleapis.com/idb9rnvqsqwrbnuxrloi3g/sidb9rnvqsqwrbnuxrloi3g.js" async></script>
+<script type="text/javascript" src="https://storage.googleapis.com/idb9rnvqsqwrbnuxrloi3g/vidb9rnvqsqwrbnuxrloi3g.js"></script>
+
+<script>
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_160x600_1', [160, 600], 'banner-160x600-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_160x600_2', [160, 600], 'banner-160x600-2').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_300x250_1', [300, 250], 'banner-300x250-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_970x90_1', [970, 90], 'banner-970x90-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_728x90_1', [728, 90], 'banner-728x90-1').addService(googletag.pubads());
+        googletag.defineSlot('/61772569/idb9rnvqsqwrbnuxrloi3g_wwwcomicsorg_728x90_2', [728, 90], 'banner-728x90-2').addService(googletag.pubads());
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.enableServices();
+    });
+</script>
+<!-- END section -->
+<script type="text/javascript">
+window['nitroAds'] = window['nitroAds'] || { createAd: function () { window.nitroAds.queue.push(["createAd", arguments]) }, queue: [] };
+</script>
+<script async src="https://s.nitropay.com/ads-253.js"></script>
+
+
+</head>
+
+<body>
+
+  <div style='height:90px' align="center">
+
+<div id="ad-top"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('ad-top', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      728,
+      90
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+
+</div>
+
+
+<div id="sizing_base" >
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+<div class="search_bar">
+
+<ul>
+  <li><a href="/"><img src="/static/img/gcd_logo.aaf0e64616e2.png" alt="GCD" style="border:0;"></a></li>
+  <li>
+  <form action="/search/" method="get">
+    
+
+<select name="type" size="1">
+  
+    
+      <option value="haystack" selected> Everything </option>
+    
+  
+    <option value="series"> Series Name </option>
+  
+    <option value="haystack_issue"> Series Name &amp; Issue # </option>
+  
+    <option value="writer"> Writer </option>
+    <option value="penciller"> Penciller </option>
+    <option value="inker"> Inker </option>
+    <option value="colorist"> Colorist </option>
+    <option value="letterer"> Letterer </option>
+    <option value="editor"> Editor </option>
+    <option value="credit"> Any Credit </option>
+    <option value="story"> Story Title </option>
+    <option value="feature"> Feature </option>
+    <option value="character"> Character </option>
+    <option value="job_number"> Job Number </option>
+    <option value="isbn"> ISBN </option>
+    <option value="barcode"> Barcode </option>
+    <option value="publisher"> Publisher Name </option>
+    <option value="brand_group"> Brand Group Name </option>
+    <option value="brand"> Brand Emblem Name </option>
+    <option value="indicia_publisher"> Indicia Publisher Name </option>
+    <option value="award"> Award </option>
+    <option value="creator"> Creator </option>
+</select>
+
+    <input type="search" name="query" size="15" value="" placeholder="Search..">
+    <input type="submit" name="submit" value="Search">
+    Sort by
+    <select name="sort" size="1">
+    <option value="alpha" selected> Name
+    <option value="chrono"> Date
+</select>
+
+  </form>
+  </li>
+  <li><a href="/search/advanced/">Advanced Query</a></li>
+
+  <li>
+  <form action="/accounts/login/" method="GET">
+    <input type="submit" name="login" value="Log In" />
+    <input type="hidden" name="next" value="/issue/21497/" />
+  </form>
+  </li>
+  <li class="donate_link"><a method="post" href="/donate/">Donate</a></span></li>
+
+</ul>
+</div>
+
+
+
+
+
+
+<div class="body_content">
+  
+
+
+
+  
+
+
+
+
+<h1 class="item_id">
+<div class="left" id="series_and_issue">
+  <span id="series_name">
+  
+    <a href="/series/704/">Strange Adventures</a>
+  
+  </span>
+  
+    
+      <span class="issue_number">#207</span>
+    
+  
+  
+</div>
+  
+<div class="right">
+  (December 1967)
+</div>
+  
+</h1>
+
+
+<div 
+     class="item_id" style="min-height: 2em">
+
+
+  <div class="item_data flex_left">
+  <a href="/publisher/54/">DC</a>,
+  1950 Series
+  </div>
+  
+  
+
+
+
+  <div class="prev_next right">
+  
+    
+    <a href="/issue/21424/">&lt; Previous Issue</a>
+    
+    |
+  
+    <form style="display:inline"
+          action="/issue/">
+      <input type="hidden" name="extra" value="">
+      <select name="id" id="id">
+    
+        <option value="8377"
+      >1
+      
+        </option>
+    
+        <option value="8469"
+      >2
+      
+        </option>
+    
+        <option value="8559"
+      >3
+      
+        </option>
+    
+        <option value="8656"
+      >4
+      
+        </option>
+    
+        <option value="8704"
+      >5
+      
+        </option>
+    
+        <option value="8756"
+      >6
+      
+        </option>
+    
+        <option value="8826"
+      >7
+      
+        </option>
+    
+        <option value="8889"
+      >8
+      
+        </option>
+    
+        <option value="8941"
+      >9
+      
+        </option>
+    
+        <option value="8998"
+      >10
+      
+        </option>
+    
+        <option value="9051"
+      >11
+      
+        </option>
+    
+        <option value="9107"
+      >12
+      
+        </option>
+    
+        <option value="9158"
+      >13
+      
+        </option>
+    
+        <option value="9221"
+      >14
+      
+        </option>
+    
+        <option value="9272"
+      >15
+      
+        </option>
+    
+        <option value="9352"
+      >16
+      
+        </option>
+    
+        <option value="9414"
+      >17
+      
+        </option>
+    
+        <option value="9477"
+      >18
+      
+        </option>
+    
+        <option value="9550"
+      >19
+      
+        </option>
+    
+        <option value="9633"
+      >20
+      
+        </option>
+    
+        <option value="9683"
+      >21
+      
+        </option>
+    
+        <option value="9757"
+      >22
+      
+        </option>
+    
+        <option value="9824"
+      >23
+      
+        </option>
+    
+        <option value="9905"
+      >24
+      
+        </option>
+    
+        <option value="9973"
+      >25
+      
+        </option>
+    
+        <option value="10056"
+      >26
+      
+        </option>
+    
+        <option value="10123"
+      >27
+      
+        </option>
+    
+        <option value="10214"
+      >28
+      
+        </option>
+    
+        <option value="10283"
+      >29
+      
+        </option>
+    
+        <option value="10354"
+      >30
+      
+        </option>
+    
+        <option value="10419"
+      >31
+      
+        </option>
+    
+        <option value="10506"
+      >32
+      
+        </option>
+    
+        <option value="10572"
+      >33
+      
+        </option>
+    
+        <option value="10636"
+      >34
+      
+        </option>
+    
+        <option value="10696"
+      >35
+      
+        </option>
+    
+        <option value="10754"
+      >36
+      
+        </option>
+    
+        <option value="10813"
+      >37
+      
+        </option>
+    
+        <option value="10880"
+      >38
+      
+        </option>
+    
+        <option value="10937"
+      >39
+      
+        </option>
+    
+        <option value="11031"
+      >40
+      
+        </option>
+    
+        <option value="11094"
+      >41
+      
+        </option>
+    
+        <option value="11147"
+      >42
+      
+        </option>
+    
+        <option value="11209"
+      >43
+      
+        </option>
+    
+        <option value="11271"
+      >44
+      
+        </option>
+    
+        <option value="11348"
+      >45
+      
+        </option>
+    
+        <option value="11410"
+      >46
+      
+        </option>
+    
+        <option value="11478"
+      >47
+      
+        </option>
+    
+        <option value="11535"
+      >48
+      
+        </option>
+    
+        <option value="11600"
+      >49
+      
+        </option>
+    
+        <option value="11658"
+      >50
+      
+        </option>
+    
+        <option value="11724"
+      >51
+      
+        </option>
+    
+        <option value="11808"
+      >52
+      
+        </option>
+    
+        <option value="11869"
+      >53
+      
+        </option>
+    
+        <option value="11930"
+      >54
+      
+        </option>
+    
+        <option value="11984"
+      >55
+      
+        </option>
+    
+        <option value="12039"
+      >56
+      
+        </option>
+    
+        <option value="12098"
+      >57
+      
+        </option>
+    
+        <option value="12181"
+      >58
+      
+        </option>
+    
+        <option value="12240"
+      >59
+      
+        </option>
+    
+        <option value="12299"
+      >60
+      
+        </option>
+    
+        <option value="12364"
+      >61
+      
+        </option>
+    
+        <option value="12429"
+      >62
+      
+        </option>
+    
+        <option value="12491"
+      >63
+      
+        </option>
+    
+        <option value="12578"
+      >64
+      
+        </option>
+    
+        <option value="12638"
+      >65
+      
+        </option>
+    
+        <option value="12689"
+      >66
+      
+        </option>
+    
+        <option value="12752"
+      >67
+      
+        </option>
+    
+        <option value="12802"
+      >68
+      
+        </option>
+    
+        <option value="12857"
+      >69
+      
+        </option>
+    
+        <option value="12923"
+      >70
+      
+        </option>
+    
+        <option value="12996"
+      >71
+      
+        </option>
+    
+        <option value="13044"
+      >72
+      
+        </option>
+    
+        <option value="13110"
+      >73
+      
+        </option>
+    
+        <option value="13161"
+      >74
+      
+        </option>
+    
+        <option value="13212"
+      >75
+      
+        </option>
+    
+        <option value="13286"
+      >76
+      
+        </option>
+    
+        <option value="13343"
+      >77
+      
+        </option>
+    
+        <option value="13401"
+      >78
+      
+        </option>
+    
+        <option value="13462"
+      >79
+      
+        </option>
+    
+        <option value="13523"
+      >80
+      
+        </option>
+    
+        <option value="13571"
+      >81
+      
+        </option>
+    
+        <option value="13627"
+      >82
+      
+        </option>
+    
+        <option value="13702"
+      >83
+      
+        </option>
+    
+        <option value="13783"
+      >84
+      
+        </option>
+    
+        <option value="13838"
+      >85
+      
+        </option>
+    
+        <option value="13885"
+      >86
+      
+        </option>
+    
+        <option value="13934"
+      >87
+      
+        </option>
+    
+        <option value="14186"
+      >88
+      
+        </option>
+    
+        <option value="14234"
+      >89
+      
+        </option>
+    
+        <option value="14287"
+      >90
+      
+        </option>
+    
+        <option value="14344"
+      >91
+      
+        </option>
+    
+        <option value="14390"
+      >92
+      
+        </option>
+    
+        <option value="14431"
+      >93
+      
+        </option>
+    
+        <option value="14478"
+      >94
+      
+        </option>
+    
+        <option value="14527"
+      >95
+      
+        </option>
+    
+        <option value="14597"
+      >96
+      
+        </option>
+    
+        <option value="14669"
+      >97
+      
+        </option>
+    
+        <option value="14714"
+      >98
+      
+        </option>
+    
+        <option value="14766"
+      >99
+      
+        </option>
+    
+        <option value="14822"
+      >100
+      
+        </option>
+    
+        <option value="14872"
+      >101
+      
+        </option>
+    
+        <option value="14923"
+      >102
+      
+        </option>
+    
+        <option value="14971"
+      >103
+      
+        </option>
+    
+        <option value="15017"
+      >104
+      
+        </option>
+    
+        <option value="15062"
+      >105
+      
+        </option>
+    
+        <option value="15104"
+      >106
+      
+        </option>
+    
+        <option value="15158"
+      >107
+      
+        </option>
+    
+        <option value="15202"
+      >108
+      
+        </option>
+    
+        <option value="15274"
+      >109
+      
+        </option>
+    
+        <option value="15348"
+      >110
+      
+        </option>
+    
+        <option value="15401"
+      >111
+      
+        </option>
+    
+        <option value="15448"
+      >112
+      
+        </option>
+    
+        <option value="15500"
+      >113
+      
+        </option>
+    
+        <option value="15541"
+      >114
+      
+        </option>
+    
+        <option value="15589"
+      >115
+      
+        </option>
+    
+        <option value="15629"
+      >116
+      
+        </option>
+    
+        <option value="15675"
+      >117
+      
+        </option>
+    
+        <option value="15717"
+      >118
+      
+        </option>
+    
+        <option value="15768"
+      >119
+      
+        </option>
+    
+        <option value="15813"
+      >120
+      
+        </option>
+    
+        <option value="15866"
+      >121
+      
+        </option>
+    
+        <option value="15925"
+      >122
+      
+        </option>
+    
+        <option value="15997"
+      >123
+      
+        </option>
+    
+        <option value="16046"
+      >124
+      
+        </option>
+    
+        <option value="16100"
+      >125
+      
+        </option>
+    
+        <option value="16144"
+      >126
+      
+        </option>
+    
+        <option value="16190"
+      >127
+      
+        </option>
+    
+        <option value="16237"
+      >128
+      
+        </option>
+    
+        <option value="16284"
+      >129
+      
+        </option>
+    
+        <option value="16331"
+      >130
+      
+        </option>
+    
+        <option value="16382"
+      >131
+      
+        </option>
+    
+        <option value="16432"
+      >132
+      
+        </option>
+    
+        <option value="16491"
+      >133
+      
+        </option>
+    
+        <option value="16545"
+      >134
+      
+        </option>
+    
+        <option value="16623"
+      >135
+      
+        </option>
+    
+        <option value="16712"
+      >136
+      
+        </option>
+    
+        <option value="16769"
+      >137
+      
+        </option>
+    
+        <option value="16822"
+      >138
+      
+        </option>
+    
+        <option value="16868"
+      >139
+      
+        </option>
+    
+        <option value="16921"
+      >140
+      
+        </option>
+    
+        <option value="16975"
+      >141
+      
+        </option>
+    
+        <option value="17029"
+      >142
+      
+        </option>
+    
+        <option value="17089"
+      >143
+      
+        </option>
+    
+        <option value="17140"
+      >144
+      
+        </option>
+    
+        <option value="17192"
+      >145
+      
+        </option>
+    
+        <option value="17249"
+      >146
+      
+        </option>
+    
+        <option value="17307"
+      >147
+      
+        </option>
+    
+        <option value="17441"
+      >148
+      
+        </option>
+    
+        <option value="17502"
+      >149
+      
+        </option>
+    
+        <option value="17556"
+      >150
+      
+        </option>
+    
+        <option value="17603"
+      >151
+      
+        </option>
+    
+        <option value="17653"
+      >152
+      
+        </option>
+    
+        <option value="17709"
+      >153
+      
+        </option>
+    
+        <option value="17760"
+      >154
+      
+        </option>
+    
+        <option value="17819"
+      >155
+      
+        </option>
+    
+        <option value="17872"
+      >156
+      
+        </option>
+    
+        <option value="17930"
+      >157
+      
+        </option>
+    
+        <option value="17984"
+      >158
+      
+        </option>
+    
+        <option value="18042"
+      >159
+      
+        </option>
+    
+        <option value="18163"
+      >160
+      
+        </option>
+    
+        <option value="18224"
+      >161
+      
+        </option>
+    
+        <option value="18275"
+      >162
+      
+        </option>
+    
+        <option value="18325"
+      >163
+      
+        </option>
+    
+        <option value="18372"
+      >164
+      
+        </option>
+    
+        <option value="18432"
+      >165
+      
+        </option>
+    
+        <option value="18478"
+      >166
+      
+        </option>
+    
+        <option value="18542"
+      >167
+      
+        </option>
+    
+        <option value="18604"
+      >168
+      
+        </option>
+    
+        <option value="18667"
+      >169
+      
+        </option>
+    
+        <option value="18737"
+      >170
+      
+        </option>
+    
+        <option value="18804"
+      >171
+      
+        </option>
+    
+        <option value="18884"
+      >172
+      
+        </option>
+    
+        <option value="18952"
+      >173
+      
+        </option>
+    
+        <option value="19019"
+      >174
+      
+        </option>
+    
+        <option value="19083"
+      >175
+      
+        </option>
+    
+        <option value="19149"
+      >176
+      
+        </option>
+    
+        <option value="19219"
+      >177
+      
+        </option>
+    
+        <option value="19284"
+      >178
+      
+        </option>
+    
+        <option value="19363"
+      >179
+      
+        </option>
+    
+        <option value="19440"
+      >180
+      
+        </option>
+    
+        <option value="19513"
+      >181
+      
+        </option>
+    
+        <option value="19592"
+      >182
+      
+        </option>
+    
+        <option value="19665"
+      >183
+      
+        </option>
+    
+        <option value="19757"
+      >184
+      
+        </option>
+    
+        <option value="19823"
+      >185
+      
+        </option>
+    
+        <option value="19893"
+      >186
+      
+        </option>
+    
+        <option value="19966"
+      >187
+      
+        </option>
+    
+        <option value="20031"
+      >188
+      
+        </option>
+    
+        <option value="20104"
+      >189
+      
+        </option>
+    
+        <option value="20172"
+      >190
+      
+        </option>
+    
+        <option value="20245"
+      >191
+      
+        </option>
+    
+        <option value="20324"
+      >192
+      
+        </option>
+    
+        <option value="20411"
+      >193
+      
+        </option>
+    
+        <option value="20491"
+      >194
+      
+        </option>
+    
+        <option value="20569"
+      >195
+      
+        </option>
+    
+        <option value="20661"
+      >196
+      
+        </option>
+    
+        <option value="20733"
+      >197
+      
+        </option>
+    
+        <option value="20804"
+      >198
+      
+        </option>
+    
+        <option value="20888"
+      >199
+      
+        </option>
+    
+        <option value="20962"
+      >200
+      
+        </option>
+    
+        <option value="21037"
+      >201
+      
+        </option>
+    
+        <option value="21109"
+      >202
+      
+        </option>
+    
+        <option value="21187"
+      >203
+      
+        </option>
+    
+        <option value="21260"
+      >204
+      
+        </option>
+    
+        <option value="21336"
+      >205
+      
+        </option>
+    
+        <option value="21424"
+      >206
+      
+        </option>
+    
+        <option value="21497"
+      
+                selected
+      >207
+      
+        </option>
+    
+        <option value="21576"
+      >208
+      
+        </option>
+    
+        <option value="21645"
+      >209
+      
+        </option>
+    
+        <option value="21710"
+      >210
+      
+        </option>
+    
+        <option value="21777"
+      >211
+      
+        </option>
+    
+        <option value="21851"
+      >212
+      
+        </option>
+    
+        <option value="21995"
+      >213
+      
+        </option>
+    
+        <option value="22151"
+      >214
+      
+        </option>
+    
+        <option value="22311"
+      >215
+      
+        </option>
+    
+        <option value="22449"
+      >216
+      
+        </option>
+    
+        <option value="22578"
+      >217
+      
+        </option>
+    
+        <option value="22707"
+      >218
+      
+        </option>
+    
+        <option value="22828"
+      >219
+      
+        </option>
+    
+        <option value="22948"
+      >220
+      
+        </option>
+    
+        <option value="23084"
+      >221
+      
+        </option>
+    
+        <option value="23217"
+      >222
+      
+        </option>
+    
+        <option value="23333"
+      >223
+      
+        </option>
+    
+        <option value="23448"
+      >224
+      
+        </option>
+    
+        <option value="23570"
+      >225
+      
+        </option>
+    
+        <option value="23701"
+      >226
+      
+        </option>
+    
+        <option value="23821"
+      >227
+      
+        </option>
+    
+        <option value="23957"
+      >228
+      
+        </option>
+    
+        <option value="24084"
+      >229
+      
+        </option>
+    
+        <option value="24213"
+      >230
+      
+        </option>
+    
+        <option value="24340"
+      >231
+      
+        </option>
+    
+        <option value="24476"
+      >232
+      
+        </option>
+    
+        <option value="24617"
+      >233
+      
+        </option>
+    
+        <option value="24777"
+      >234
+      
+        </option>
+    
+        <option value="24929"
+      >235
+      
+        </option>
+    
+        <option value="25084"
+      >236
+      
+        </option>
+    
+        <option value="25246"
+      >237
+      
+        </option>
+    
+        <option value="25415"
+      >238
+      
+        </option>
+    
+        <option value="25607"
+      >239
+      
+        </option>
+    
+        <option value="25803"
+      >240
+      
+        </option>
+    
+        <option value="26000"
+      >241
+      
+        </option>
+    
+        <option value="26193"
+      >242
+      
+        </option>
+    
+        <option value="26405"
+      >243
+      
+        </option>
+    
+        <option value="26613"
+      >244
+      
+        </option>
+    
+      </select>
+      <input type="submit" value="Go"/>
+    </form>
+  
+    |
+    
+    <a href="/issue/21576/">Next Issue &gt;</a>
+    
+  
+  </div>
+
+
+</div>
+
+
+
+
+
+<div class="control_body">
+  <div id="control_container">
+    <div id="control_center">
+
+
+
+
+
+      <dl id="issue_data_list">
+
+        <dt> Price</dt>
+        <dd id="issue_price"> 0.12 USD</dd>
+        <dt> Pages</dt>
+        <dd id="issue_pages"> 36</dd>
+
+        <dt> Indicia Frequency</dt>
+        <dd id="indicia_frequency"> monthly</dd>
+
+
+        <dt> On-sale date</dt>
+        <dd id="on_sale_date">
+        1967-10-31</dd>
+
+
+        <dt> Publisher's Age Guidelines</dt>
+        <dd id="rating">
+        Approved by the Comics Code Authority</dd>
+
+        <dt> Indicia&nbsp;/&nbsp;Colophon Publisher</dt>
+        <dd id="issue_indicia_publisher"> <a href="/indicia_publisher/4/">National Periodical Publications, Inc.</a></dd>
+
+        <dt> Brand</dt>
+        <dd id="issue_brand"> <a href="/brand_emblem/4/">Superman DC National Comics</a></dd>
+
+
+
+      </dl>
+<dl>
+<dt class="credit_tag"><span class="credit_label">Editing</span></dt><dd class="credit_def"><span class="credit_value">Jack Miller</span></dd>
+</dl>
+
+  
+      <dl class="issue_format">
+    
+    
+        <dt> Color</dt>
+        <dd id="format_color">Color</dd>
+    
+    
+        <dt> Dimensions</dt>
+        <dd id="format_dimensions">Standard Golden Age U.S.; Standard Silver Age U.S.; Standard Modern Age U.S.</dd>
+    
+    
+        <dt> Paper Stock</dt>
+        <dd id="format_paper_stock">Glossy cover; newsprint interior</dd>
+    
+    
+        <dt> Binding</dt>
+        <dd id="format_binding">Saddle-stitched</dd>
+    
+    
+        <dt> Publishing Format</dt>
+        <dd id="format_publishing_format">was ongoing series</dd>
+    
+      </dl>
+  
+
+
+
+
+      <div class="issue_notes">
+        <div class="issue_notes_border">
+          <h3 class="notes_header"> Issue Notes </h3>
+          <p>
+  
+  
+    
+  
+            On-sale date from copyright registration.
+            
+            <dl class="contents">
+            
+            </dl>
+  
+        </div>
+      </div>
+ <!-- issue.notes -->
+      <hr class="divider">
+      <div class="cover">
+        <div class="coverContainer">
+          <div class="coverContent">
+            <div id="cover_data">
+
+  
+  
+    
+
+
+
+
+    <div class="single_story">
+      <a name="153973"></a>
+      <h2 class="sequence header title">
+        <span class="title left">What Makes a Corpse Cry?</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_153973">(Table of Contents)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+          <span class="feature">Deadman</span>
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+           / 
+          cover / 
+          1
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%23153973&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20What%20Makes%20a%20Corpse%20Cry%3F" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          
+          <dt class="credit_tag"><span class="credit_label">Pencils</span></dt><dd class="credit_def"><span class="credit_value">Neal Adams</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Inks</span></dt><dd class="credit_def"><span class="credit_value">Neal Adams</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Colors</span></dt><dd class="credit_def"><span class="credit_value">Neal Adams ?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            
+            
+            <dt class="credit_tag short"><span class="credit_label">Genre</span></dt><dd class="credit_def short"><span class="credit_value">superhero</span></dd>
+            <dt class="credit_tag"><span class="credit_label">Characters</span></dt><dd class="credit_def"><span class="credit_value">Deadman [Boston Brand]</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Awards</span></dt><dd class="credit_def"><span class="credit_value"><ul><li><a href="/award/6/">Alley Awards</a> - <a href="/received_award/7632/">Best Cover (1967)</a></li></ul></span></dd>
+            <dt class="credit_tag"><span class="credit_label">Reprints</span></dt><dd class="credit_def"><span class="credit_value"><ul><li> <img src="/static//img/gcd/flags/se.png" alt="SE" title="Sweden" class="embedded_flag"> in  <a href="/issue/39924/#229458">Serietidningen (Semic, 1984 series) #2/1985</a> ([april] 1985)<li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/40385/#231728">Deadman (DC, 1985 series) #5</a> (September 1985)<li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/355331/#962725">The Deadman Collection (DC, 2001 series) </a> ([November] 2001)</li><li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/898886/">Deadman (DC, 2011 series) #1</a> (May 2011)</ul></span></dd>
+            
+        </dl>
+        
+
+        
+
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+  
+  
+
+            </div>
+          </div>
+          <div class="coverImage">
+
+            <a href="/issue/21497/cover/4"><img src="https://files1.comics.org//img/gcd/covers_by_id/14/w200/14419.jpg?4071845324434572423" alt="Cover Thumbnail for Strange Adventures (DC, 1950 series) #207"  class="cover_img"/></a>
+
+
+            <div class="issue_cover_links">
+<div class="left">
+
+              View: <a href="/issue/21497/cover/4">Large</a>
+              <br>
+  
+              <a href="/edit_covers/21497/">Edit cover</a>
+              <br>
+  
+
+</div>
+<div class="right">
+
+              <a href="/series/704/covers/?page=5">Cover gallery</a>
+
+</div>
+            </div>
+          </div>
+        </div> <!-- coverContainer -->
+      </div> <!-- cover -->
+      <div id="story_data">
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041724"></a>
+      <h2 class="sequence header title">
+        <span class="title left">Why Fight? Read All Three!!</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041724">(Table of Contents: 1)</a></span>
+        
+        <span class="right single_story_navigation"><a class="toc" href="?issue_detail=2">(Expand)</a> / </span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+          
+          promo (ad from the publisher) / 
+          1
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041724&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20Why%20Fight%3F%20Read%20All%20Three%21%21" target="_blank">(report information)</a></span>
+        
+      </h3>
+       <!-- shown_types -->
+
+      
+        <dl class="contents"></dl>
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="153974"></a>
+      <h2 class="sequence header title">
+        <span class="title left">What Makes a Corpse Cry?</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_153974">(Table of Contents: 2)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+          <span class="feature">Deadman</span>
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+           / 
+          comic story / 
+          16
+          
+            pages
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%23153974&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20What%20Makes%20a%20Corpse%20Cry%3F" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          <dt class="credit_tag"><span class="credit_label">Script</span></dt><dd class="credit_def"><span class="credit_value">Carmine Infantino (plot); Jack Miller (script)</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Pencils</span></dt><dd class="credit_def"><span class="credit_value">Neal Adams</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Inks</span></dt><dd class="credit_def"><span class="credit_value">Neal Adams</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Colors</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">Milt Snapinn ?</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            
+            
+            <dt class="credit_tag short"><span class="credit_label">Genre</span></dt><dd class="credit_def short"><span class="credit_value">superhero</span></dd>
+            <dt class="credit_tag"><span class="credit_label">Characters</span></dt><dd class="credit_def"><span class="credit_value">Deadman [Boston Brand]; Rama Kushna; Tiny; Liz Martin; Rocky Manzel; Paul</span></dd>
+            <dt class="credit_tag"><span class="credit_label">Synopsis</span></dt><dd class="credit_def"><span class="credit_value">While trying to find his killer, Boston Brand checks on Rocky Manzel who once threatened to kill him.  Boston stops Rocky and his band of counterfeiters.</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Reprints</span></dt><dd class="credit_def"><span class="credit_value"><ul><li> <img src="/static//img/gcd/flags/fr.png" alt="FR" title="France" class="embedded_flag"> in  <a href="/issue/849681/">Eclipso (Arédit-Artima, 1968 series) #5</a> (avril 1969) [N&amp;B [B&amp;W]]<li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/27910/#183667">World&#39;s Finest Comics (DC, 1941 series) #226</a> (November-December 1974)<li> <img src="/static//img/gcd/flags/au.png" alt="AU" title="Australia" class="embedded_flag"> in  <a href="/issue/290046/#458066">Superman Supacomic (K. G. Murray, 1959 series) #200</a> (Circa April 1976)<li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/40060/#230286">Deadman (DC, 1985 series) #2</a> (June 1985)<li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/355331/#962724">The Deadman Collection (DC, 2001 series) </a> ([November] 2001)</li><li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> in  <a href="/issue/898886/">Deadman (DC, 2011 series) #1</a> (May 2011)</ul></span></dd>
+            
+        </dl>
+        
+
+        
+
+        
+        <h3 class="notes_header"> Indexer Notes </h3>
+        <p>Story across 17 pages in two parts of 5.5 and 10.5 pages.</p>
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041717"></a>
+      <h2 class="sequence header title">
+        <span class="title left">[no title indexed]</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041717">(Table of Contents: 3)</a></span>
+        
+        <span class="right single_story_navigation"><a class="toc" href="?issue_detail=2">(Expand)</a> / </span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+          <span class="feature">Direct Currents</span>
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+           / 
+          promo (ad from the publisher) / 
+          1
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041717&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20%5Bno%20title%20indexed%5D" target="_blank">(report information)</a></span>
+        
+      </h3>
+       <!-- shown_types -->
+
+      
+        <dl class="contents"></dl>
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041723"></a>
+      <h2 class="sequence header title">
+        <span class="title left">The Great Ghost Hunt</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041723">(Table of Contents: 4)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+          <span class="feature">Strange but True</span>
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+           / 
+          text article / 
+          1
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041723&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20The%20Great%20Ghost%20Hunt" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          <dt class="credit_tag"><span class="credit_label">Script</span></dt><dd class="credit_def"><span class="credit_value">Jack Miller ?</span></dd>
+          
+          
+          
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">typeset</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            
+            
+            <dt class="credit_tag short"><span class="credit_label">Genre</span></dt><dd class="credit_def short"><span class="credit_value">fantasy-supernatural</span></dd>
+            
+            
+            
+            
+            
+        </dl>
+        
+
+        
+
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041720"></a>
+      <h2 class="sequence header title">
+        <span class="title left">[no title indexed]</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041720">(Table of Contents: 5)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+          <span class="feature">Cap&#39;s Hobby Hints</span>
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+           / 
+          activity / 
+          0.5
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041720&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20%5Bno%20title%20indexed%5D" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          <dt class="credit_tag"><span class="credit_label">Script</span></dt><dd class="credit_def"><span class="credit_value">Henry Boltinoff</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Pencils</span></dt><dd class="credit_def"><span class="credit_value">Henry Boltinoff (signed)</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Inks</span></dt><dd class="credit_def"><span class="credit_value">Henry Boltinoff</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Colors</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">Henry Boltinoff</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            <dt class="credit_tag short"><span class="credit_label">Job Number</span></dt><dd class="credit_def short"><span class="credit_value">6583</span></dd>
+            <dt class="credit_tag short"><span class="credit_label">First Line of Dialogue or Text</span></dt><dd class="credit_def short"><span class="credit_value">There! My model ship is finished.</span></dd>
+            
+            
+            
+            
+            
+            
+        </dl>
+        
+
+        
+
+        
+        <h3 class="notes_header"> Indexer Notes </h3>
+        <p>hint submitted by Norman Jacobs of Wauwatosa, Wisconsin</p>
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041719"></a>
+      <h2 class="sequence header title">
+        <span class="title left">The Haunted Bed!</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041719">(Table of Contents: 6)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+          
+          comic story / 
+          0.5
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041719&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20The%20Haunted%20Bed%21" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          <dt class="credit_tag"><span class="credit_label">Script</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Pencils</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Inks</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Colors</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            
+            
+            <dt class="credit_tag short"><span class="credit_label">Genre</span></dt><dd class="credit_def short"><span class="credit_value">fantasy-supernatural</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Synopsis</span></dt><dd class="credit_def"><span class="credit_value">One of the rooms at Mrs. Carson&#39;s boarding house seems to be haunted.</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Reprints</span></dt><dd class="credit_def"><span class="credit_value"><ul><li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> from  <a href="/issue/11027/#1417018">House of Mystery (DC, 1951 series) #22</a> (January 1954)</ul></span></dd>
+            
+        </dl>
+        
+
+        
+
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041718"></a>
+      <h2 class="sequence header title">
+        <span class="title left">Man or Wolf?</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041718">(Table of Contents: 7)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+          
+          comic story / 
+          0.5
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041718&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20Man%20or%20Wolf%3F" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          <dt class="credit_tag"><span class="credit_label">Script</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Pencils</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Inks</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Colors</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            
+            
+            <dt class="credit_tag short"><span class="credit_label">Genre</span></dt><dd class="credit_def short"><span class="credit_value">non-fiction; fantasy-supernatural</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Synopsis</span></dt><dd class="credit_def"><span class="credit_value">Was Eric Linden really a werewolf?</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Reprints</span></dt><dd class="credit_def"><span class="credit_value"><ul><li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> from  <a href="/issue/11802/#1540951">House of Mystery (DC, 1951 series) #34</a> (January 1955)</ul></span></dd>
+            
+        </dl>
+        
+
+        
+
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041721"></a>
+      <h2 class="sequence header title">
+        <span class="title left">Bad News!</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041721">(Table of Contents: 8)</a></span>
+        
+        <span class="right single_story_navigation"><a class="toc" href="?issue_detail=2">(Expand)</a> / </span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+          <span class="feature">Superman</span>
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+           / 
+          promo (ad from the publisher) / 
+          0.5
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041721&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20Bad%20News%21" target="_blank">(report information)</a></span>
+        
+      </h3>
+       <!-- shown_types -->
+
+      
+        <dl class="contents"></dl>
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="153975"></a>
+      <h2 class="sequence header title">
+        <span class="title left">Man of a Thousand Shapes!</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_153975">(Table of Contents: 9)</a></span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+          
+          comic story / 
+          6
+          
+            pages
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%23153975&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20Man%20of%20a%20Thousand%20Shapes%21" target="_blank">(report information)</a></span>
+        
+      </h3>
+      
+        
+      <dl class="credits">
+          <dt class="credit_tag"><span class="credit_label">Script</span></dt><dd class="credit_def"><span class="credit_value">Joe Samachson</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Pencils</span></dt><dd class="credit_def"><span class="credit_value">Carmine Infantino</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Inks</span></dt><dd class="credit_def"><span class="credit_value">Bernard Sachs</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Colors</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          <dt class="credit_tag"><span class="credit_label">Letters</span></dt><dd class="credit_def"><span class="credit_value">?</span></dd>
+          
+      </dl>
+        
+
+        
+        <hr class="content_header"></hr>
+        <dl class="contents">
+            
+            
+            <dt class="credit_tag short"><span class="credit_label">Genre</span></dt><dd class="credit_def short"><span class="credit_value">science fiction</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Synopsis</span></dt><dd class="credit_def"><span class="credit_value">An alien lawman comes to Earth and works in a carnival sideshow, hoping to attract the attention of the criminal he is seeking when word spreads about his fantastic ability to change shape.</span></dd>
+            
+            <dt class="credit_tag"><span class="credit_label">Reprints</span></dt><dd class="credit_def"><span class="credit_value"><ul><li> <img src="/static//img/gcd/flags/us.png" alt="US" title="United States" class="embedded_flag"> from  <a href="/issue/12689/#106713">Strange Adventures (DC, 1950 series) #66</a> (March 1956)</ul></span></dd>
+            
+        </dl>
+        
+
+        
+
+        
+        <h3 class="notes_header"> Indexer Notes </h3>
+        <p>script credit from index of original story</p>
+        
+       <!-- shown_types -->
+
+      
+    </div>
+
+
+
+  
+
+
+
+
+    <div class="single_story">
+      <a name="1041722"></a>
+      <h2 class="sequence header title">
+        <span class="title left">Greatest Action Teams in History!</span>
+        <span class="right single_story_navigation"><a class="toc" href="#toc_1041722">(Table of Contents: 10)</a></span>
+        
+        <span class="right single_story_navigation"><a class="toc" href="?issue_detail=2">(Expand)</a> / </span>
+        
+      </h2>
+      <h3 class="sequence_header feature">
+        <span class="left">
+        
+        
+          <span class="type">
+          <!-- needs to be stuck together to get display spacing right. -->
+          
+          promo (ad from the publisher) / 
+          1
+          
+            page
+          
+          </span>
+        
+        </span>
+        
+          
+        <span class="right single_story_navigation"><a href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/%231041722&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207%20-%20Greatest%20Action%20Teams%20in%20History%21" target="_blank">(report information)</a></span>
+        
+      </h3>
+       <!-- shown_types -->
+
+      
+        <dl class="contents"></dl>
+      
+    </div>
+
+
+
+      </div>
+    </div> <!-- control_center -->
+
+    <div id="control_rail">
+      <div class="edit_box">
+
+        <div class="edit_header">Editing
+  
+        </div>
+  
+    
+    
+    
+      
+
+
+
+  
+<form action="/accounts/login/" method="GET">
+  <input type="submit" name="login" value="Log in to edit" />
+  <input type="hidden" name="next" value="/issue/21497/" />
+</form>
+  
+
+
+
+    
+    
+    
+    
+    
+   <!-- not preview -->
+ <!-- MYCOMICS -->
+      </div> <!-- edit_box -->
+      <div id="change_history" class="edit_footer">
+  
+        <a href="/issue/21497/history/">View Change History</a>
+  
+      </div>
+
+  
+      <div class="my_comics_cross_link">
+        <a href="http://my.comics.org/issue/21497/">Issue at my.comics.org</a>
+      </div>
+  
+      <div class="side_section_header">Related Scans</div>
+        <ul class="side_section_body">
+  
+    
+      
+          <li> <a href="/issue/21497/image/">Indicia</a>
+      
+      
+    
+  
+        </ul>
+  
+      <div class="side_section_header">Series Information</div>
+      <ul class="side_section_body">
+        <li> <a href="/series/704/details/">Details by Issue</a><br/>
+        <li> <a href="/series/704/details/timeline/">Timeline</a>
+    
+        <li> <a href="/series/704/covers">Cover gallery</a>
+    
+  
+      </ul>
+
+
+      <a name="toc"></a>
+      <div class="side_section_header">Table of Contents</div>
+      <ol id="story_toc">
+
+        <li class="even">
+        0. <span class="toc_story_title">
+        <a name="toc_153973" href="#153973">What Makes a Corpse Cry?</a></span><br/>
+  
+        <span class="toc_story_feature">Deadman</span>
+  
+
+
+        <li class="odd">
+        1.
+        <span class="toc_story_title">
+        <a name="toc_1041724" href="#1041724">Why Fight? Read All Three!!</a></span><br/>
+  
+
+        <li class="even">
+        2.
+        <span class="toc_story_title">
+        <a name="toc_153974" href="#153974">What Makes a Corpse Cry?</a></span><br/>
+  
+        <span class="toc_story_feature">Deadman</span>
+  
+
+        <li class="odd">
+        3.
+        <span class="toc_story_title">
+        <a name="toc_1041717" href="#1041717">[no title indexed]</a></span><br/>
+  
+        <span class="toc_story_feature">Direct Currents</span>
+  
+
+        <li class="even">
+        4.
+        <span class="toc_story_title">
+        <a name="toc_1041723" href="#1041723">The Great Ghost Hunt</a></span><br/>
+  
+        <span class="toc_story_feature">Strange but True</span>
+  
+
+        <li class="odd">
+        5.
+        <span class="toc_story_title">
+        <a name="toc_1041720" href="#1041720">[&quot;There! My model ship is finished.&quot;]</a></span><br/>
+  
+        <span class="toc_story_feature">Cap&#39;s Hobby Hints</span>
+  
+
+        <li class="even">
+        6.
+        <span class="toc_story_title">
+        <a name="toc_1041719" href="#1041719">The Haunted Bed!</a></span><br/>
+  
+
+        <li class="odd">
+        7.
+        <span class="toc_story_title">
+        <a name="toc_1041718" href="#1041718">Man or Wolf?</a></span><br/>
+  
+
+        <li class="even">
+        8.
+        <span class="toc_story_title">
+        <a name="toc_1041721" href="#1041721">Bad News!</a></span><br/>
+  
+        <span class="toc_story_feature">Superman</span>
+  
+
+        <li class="odd">
+        9.
+        <span class="toc_story_title">
+        <a name="toc_153975" href="#153975">Man of a Thousand Shapes!</a></span><br/>
+  
+
+        <li class="even">
+        10.
+        <span class="toc_story_title">
+        <a name="toc_1041722" href="#1041722">Greatest Action Teams in History!</a></span><br/>
+  
+
+      </ol>
+
+
+  
+<div id="right side"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('right side', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": true,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      160,
+      600
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+
+
+
+
+
+
+      <div id="index_credits">
+  
+        <div id="indexers_header">This issue was most recently modified by:</div>
+        <ul>
+    
+          <li> Nick Caputo
+    
+          <li> Mike Nielsen
+    
+          <li> Jerry Hillegas
+    
+          <li> Jim Van Dore
+    
+          <li> Dwayne Best
+    
+          <li> Per Sandell
+    
+          <li> Stephane PETIT
+    
+          <li> Matthew Head
+    
+          <li> John Fallon
+    
+        </ul>
+  
+  
+        <div id="indexers_header">Issues in this series have been indexed by:</div>
+        <ul>
+    
+          <li> Mike Tiefenbacher
+    
+          <li> Arthur Lortie
+    
+          <li> Donald Dale Milne
+    
+          <li> Mark Gordon
+    
+          <li> Mike Nielsen
+    
+          <li> Ed Boner
+    
+          <li> Bob Hughes
+    
+        </ul>
+  
+      </div> <!-- index_credits -->
+
+    </div> <!-- control_rail -->
+  </div> <!-- control_container -->
+</div> <!-- control_body -->
+
+
+
+
+  
+
+
+
+
+
+<div  id="item_id_footer" 
+     class="item_id" style="min-height: 2em">
+
+
+
+
+  <div class="prev_next right">
+  
+    
+    <a href="/issue/21424/">&lt; Previous Issue</a>
+    
+    |
+  
+    <form style="display:inline"
+          action="/issue/">
+      <input type="hidden" name="extra" value="">
+      <select name="id" id="id">
+    
+        <option value="8377"
+      >1
+      
+        </option>
+    
+        <option value="8469"
+      >2
+      
+        </option>
+    
+        <option value="8559"
+      >3
+      
+        </option>
+    
+        <option value="8656"
+      >4
+      
+        </option>
+    
+        <option value="8704"
+      >5
+      
+        </option>
+    
+        <option value="8756"
+      >6
+      
+        </option>
+    
+        <option value="8826"
+      >7
+      
+        </option>
+    
+        <option value="8889"
+      >8
+      
+        </option>
+    
+        <option value="8941"
+      >9
+      
+        </option>
+    
+        <option value="8998"
+      >10
+      
+        </option>
+    
+        <option value="9051"
+      >11
+      
+        </option>
+    
+        <option value="9107"
+      >12
+      
+        </option>
+    
+        <option value="9158"
+      >13
+      
+        </option>
+    
+        <option value="9221"
+      >14
+      
+        </option>
+    
+        <option value="9272"
+      >15
+      
+        </option>
+    
+        <option value="9352"
+      >16
+      
+        </option>
+    
+        <option value="9414"
+      >17
+      
+        </option>
+    
+        <option value="9477"
+      >18
+      
+        </option>
+    
+        <option value="9550"
+      >19
+      
+        </option>
+    
+        <option value="9633"
+      >20
+      
+        </option>
+    
+        <option value="9683"
+      >21
+      
+        </option>
+    
+        <option value="9757"
+      >22
+      
+        </option>
+    
+        <option value="9824"
+      >23
+      
+        </option>
+    
+        <option value="9905"
+      >24
+      
+        </option>
+    
+        <option value="9973"
+      >25
+      
+        </option>
+    
+        <option value="10056"
+      >26
+      
+        </option>
+    
+        <option value="10123"
+      >27
+      
+        </option>
+    
+        <option value="10214"
+      >28
+      
+        </option>
+    
+        <option value="10283"
+      >29
+      
+        </option>
+    
+        <option value="10354"
+      >30
+      
+        </option>
+    
+        <option value="10419"
+      >31
+      
+        </option>
+    
+        <option value="10506"
+      >32
+      
+        </option>
+    
+        <option value="10572"
+      >33
+      
+        </option>
+    
+        <option value="10636"
+      >34
+      
+        </option>
+    
+        <option value="10696"
+      >35
+      
+        </option>
+    
+        <option value="10754"
+      >36
+      
+        </option>
+    
+        <option value="10813"
+      >37
+      
+        </option>
+    
+        <option value="10880"
+      >38
+      
+        </option>
+    
+        <option value="10937"
+      >39
+      
+        </option>
+    
+        <option value="11031"
+      >40
+      
+        </option>
+    
+        <option value="11094"
+      >41
+      
+        </option>
+    
+        <option value="11147"
+      >42
+      
+        </option>
+    
+        <option value="11209"
+      >43
+      
+        </option>
+    
+        <option value="11271"
+      >44
+      
+        </option>
+    
+        <option value="11348"
+      >45
+      
+        </option>
+    
+        <option value="11410"
+      >46
+      
+        </option>
+    
+        <option value="11478"
+      >47
+      
+        </option>
+    
+        <option value="11535"
+      >48
+      
+        </option>
+    
+        <option value="11600"
+      >49
+      
+        </option>
+    
+        <option value="11658"
+      >50
+      
+        </option>
+    
+        <option value="11724"
+      >51
+      
+        </option>
+    
+        <option value="11808"
+      >52
+      
+        </option>
+    
+        <option value="11869"
+      >53
+      
+        </option>
+    
+        <option value="11930"
+      >54
+      
+        </option>
+    
+        <option value="11984"
+      >55
+      
+        </option>
+    
+        <option value="12039"
+      >56
+      
+        </option>
+    
+        <option value="12098"
+      >57
+      
+        </option>
+    
+        <option value="12181"
+      >58
+      
+        </option>
+    
+        <option value="12240"
+      >59
+      
+        </option>
+    
+        <option value="12299"
+      >60
+      
+        </option>
+    
+        <option value="12364"
+      >61
+      
+        </option>
+    
+        <option value="12429"
+      >62
+      
+        </option>
+    
+        <option value="12491"
+      >63
+      
+        </option>
+    
+        <option value="12578"
+      >64
+      
+        </option>
+    
+        <option value="12638"
+      >65
+      
+        </option>
+    
+        <option value="12689"
+      >66
+      
+        </option>
+    
+        <option value="12752"
+      >67
+      
+        </option>
+    
+        <option value="12802"
+      >68
+      
+        </option>
+    
+        <option value="12857"
+      >69
+      
+        </option>
+    
+        <option value="12923"
+      >70
+      
+        </option>
+    
+        <option value="12996"
+      >71
+      
+        </option>
+    
+        <option value="13044"
+      >72
+      
+        </option>
+    
+        <option value="13110"
+      >73
+      
+        </option>
+    
+        <option value="13161"
+      >74
+      
+        </option>
+    
+        <option value="13212"
+      >75
+      
+        </option>
+    
+        <option value="13286"
+      >76
+      
+        </option>
+    
+        <option value="13343"
+      >77
+      
+        </option>
+    
+        <option value="13401"
+      >78
+      
+        </option>
+    
+        <option value="13462"
+      >79
+      
+        </option>
+    
+        <option value="13523"
+      >80
+      
+        </option>
+    
+        <option value="13571"
+      >81
+      
+        </option>
+    
+        <option value="13627"
+      >82
+      
+        </option>
+    
+        <option value="13702"
+      >83
+      
+        </option>
+    
+        <option value="13783"
+      >84
+      
+        </option>
+    
+        <option value="13838"
+      >85
+      
+        </option>
+    
+        <option value="13885"
+      >86
+      
+        </option>
+    
+        <option value="13934"
+      >87
+      
+        </option>
+    
+        <option value="14186"
+      >88
+      
+        </option>
+    
+        <option value="14234"
+      >89
+      
+        </option>
+    
+        <option value="14287"
+      >90
+      
+        </option>
+    
+        <option value="14344"
+      >91
+      
+        </option>
+    
+        <option value="14390"
+      >92
+      
+        </option>
+    
+        <option value="14431"
+      >93
+      
+        </option>
+    
+        <option value="14478"
+      >94
+      
+        </option>
+    
+        <option value="14527"
+      >95
+      
+        </option>
+    
+        <option value="14597"
+      >96
+      
+        </option>
+    
+        <option value="14669"
+      >97
+      
+        </option>
+    
+        <option value="14714"
+      >98
+      
+        </option>
+    
+        <option value="14766"
+      >99
+      
+        </option>
+    
+        <option value="14822"
+      >100
+      
+        </option>
+    
+        <option value="14872"
+      >101
+      
+        </option>
+    
+        <option value="14923"
+      >102
+      
+        </option>
+    
+        <option value="14971"
+      >103
+      
+        </option>
+    
+        <option value="15017"
+      >104
+      
+        </option>
+    
+        <option value="15062"
+      >105
+      
+        </option>
+    
+        <option value="15104"
+      >106
+      
+        </option>
+    
+        <option value="15158"
+      >107
+      
+        </option>
+    
+        <option value="15202"
+      >108
+      
+        </option>
+    
+        <option value="15274"
+      >109
+      
+        </option>
+    
+        <option value="15348"
+      >110
+      
+        </option>
+    
+        <option value="15401"
+      >111
+      
+        </option>
+    
+        <option value="15448"
+      >112
+      
+        </option>
+    
+        <option value="15500"
+      >113
+      
+        </option>
+    
+        <option value="15541"
+      >114
+      
+        </option>
+    
+        <option value="15589"
+      >115
+      
+        </option>
+    
+        <option value="15629"
+      >116
+      
+        </option>
+    
+        <option value="15675"
+      >117
+      
+        </option>
+    
+        <option value="15717"
+      >118
+      
+        </option>
+    
+        <option value="15768"
+      >119
+      
+        </option>
+    
+        <option value="15813"
+      >120
+      
+        </option>
+    
+        <option value="15866"
+      >121
+      
+        </option>
+    
+        <option value="15925"
+      >122
+      
+        </option>
+    
+        <option value="15997"
+      >123
+      
+        </option>
+    
+        <option value="16046"
+      >124
+      
+        </option>
+    
+        <option value="16100"
+      >125
+      
+        </option>
+    
+        <option value="16144"
+      >126
+      
+        </option>
+    
+        <option value="16190"
+      >127
+      
+        </option>
+    
+        <option value="16237"
+      >128
+      
+        </option>
+    
+        <option value="16284"
+      >129
+      
+        </option>
+    
+        <option value="16331"
+      >130
+      
+        </option>
+    
+        <option value="16382"
+      >131
+      
+        </option>
+    
+        <option value="16432"
+      >132
+      
+        </option>
+    
+        <option value="16491"
+      >133
+      
+        </option>
+    
+        <option value="16545"
+      >134
+      
+        </option>
+    
+        <option value="16623"
+      >135
+      
+        </option>
+    
+        <option value="16712"
+      >136
+      
+        </option>
+    
+        <option value="16769"
+      >137
+      
+        </option>
+    
+        <option value="16822"
+      >138
+      
+        </option>
+    
+        <option value="16868"
+      >139
+      
+        </option>
+    
+        <option value="16921"
+      >140
+      
+        </option>
+    
+        <option value="16975"
+      >141
+      
+        </option>
+    
+        <option value="17029"
+      >142
+      
+        </option>
+    
+        <option value="17089"
+      >143
+      
+        </option>
+    
+        <option value="17140"
+      >144
+      
+        </option>
+    
+        <option value="17192"
+      >145
+      
+        </option>
+    
+        <option value="17249"
+      >146
+      
+        </option>
+    
+        <option value="17307"
+      >147
+      
+        </option>
+    
+        <option value="17441"
+      >148
+      
+        </option>
+    
+        <option value="17502"
+      >149
+      
+        </option>
+    
+        <option value="17556"
+      >150
+      
+        </option>
+    
+        <option value="17603"
+      >151
+      
+        </option>
+    
+        <option value="17653"
+      >152
+      
+        </option>
+    
+        <option value="17709"
+      >153
+      
+        </option>
+    
+        <option value="17760"
+      >154
+      
+        </option>
+    
+        <option value="17819"
+      >155
+      
+        </option>
+    
+        <option value="17872"
+      >156
+      
+        </option>
+    
+        <option value="17930"
+      >157
+      
+        </option>
+    
+        <option value="17984"
+      >158
+      
+        </option>
+    
+        <option value="18042"
+      >159
+      
+        </option>
+    
+        <option value="18163"
+      >160
+      
+        </option>
+    
+        <option value="18224"
+      >161
+      
+        </option>
+    
+        <option value="18275"
+      >162
+      
+        </option>
+    
+        <option value="18325"
+      >163
+      
+        </option>
+    
+        <option value="18372"
+      >164
+      
+        </option>
+    
+        <option value="18432"
+      >165
+      
+        </option>
+    
+        <option value="18478"
+      >166
+      
+        </option>
+    
+        <option value="18542"
+      >167
+      
+        </option>
+    
+        <option value="18604"
+      >168
+      
+        </option>
+    
+        <option value="18667"
+      >169
+      
+        </option>
+    
+        <option value="18737"
+      >170
+      
+        </option>
+    
+        <option value="18804"
+      >171
+      
+        </option>
+    
+        <option value="18884"
+      >172
+      
+        </option>
+    
+        <option value="18952"
+      >173
+      
+        </option>
+    
+        <option value="19019"
+      >174
+      
+        </option>
+    
+        <option value="19083"
+      >175
+      
+        </option>
+    
+        <option value="19149"
+      >176
+      
+        </option>
+    
+        <option value="19219"
+      >177
+      
+        </option>
+    
+        <option value="19284"
+      >178
+      
+        </option>
+    
+        <option value="19363"
+      >179
+      
+        </option>
+    
+        <option value="19440"
+      >180
+      
+        </option>
+    
+        <option value="19513"
+      >181
+      
+        </option>
+    
+        <option value="19592"
+      >182
+      
+        </option>
+    
+        <option value="19665"
+      >183
+      
+        </option>
+    
+        <option value="19757"
+      >184
+      
+        </option>
+    
+        <option value="19823"
+      >185
+      
+        </option>
+    
+        <option value="19893"
+      >186
+      
+        </option>
+    
+        <option value="19966"
+      >187
+      
+        </option>
+    
+        <option value="20031"
+      >188
+      
+        </option>
+    
+        <option value="20104"
+      >189
+      
+        </option>
+    
+        <option value="20172"
+      >190
+      
+        </option>
+    
+        <option value="20245"
+      >191
+      
+        </option>
+    
+        <option value="20324"
+      >192
+      
+        </option>
+    
+        <option value="20411"
+      >193
+      
+        </option>
+    
+        <option value="20491"
+      >194
+      
+        </option>
+    
+        <option value="20569"
+      >195
+      
+        </option>
+    
+        <option value="20661"
+      >196
+      
+        </option>
+    
+        <option value="20733"
+      >197
+      
+        </option>
+    
+        <option value="20804"
+      >198
+      
+        </option>
+    
+        <option value="20888"
+      >199
+      
+        </option>
+    
+        <option value="20962"
+      >200
+      
+        </option>
+    
+        <option value="21037"
+      >201
+      
+        </option>
+    
+        <option value="21109"
+      >202
+      
+        </option>
+    
+        <option value="21187"
+      >203
+      
+        </option>
+    
+        <option value="21260"
+      >204
+      
+        </option>
+    
+        <option value="21336"
+      >205
+      
+        </option>
+    
+        <option value="21424"
+      >206
+      
+        </option>
+    
+        <option value="21497"
+      
+                selected
+      >207
+      
+        </option>
+    
+        <option value="21576"
+      >208
+      
+        </option>
+    
+        <option value="21645"
+      >209
+      
+        </option>
+    
+        <option value="21710"
+      >210
+      
+        </option>
+    
+        <option value="21777"
+      >211
+      
+        </option>
+    
+        <option value="21851"
+      >212
+      
+        </option>
+    
+        <option value="21995"
+      >213
+      
+        </option>
+    
+        <option value="22151"
+      >214
+      
+        </option>
+    
+        <option value="22311"
+      >215
+      
+        </option>
+    
+        <option value="22449"
+      >216
+      
+        </option>
+    
+        <option value="22578"
+      >217
+      
+        </option>
+    
+        <option value="22707"
+      >218
+      
+        </option>
+    
+        <option value="22828"
+      >219
+      
+        </option>
+    
+        <option value="22948"
+      >220
+      
+        </option>
+    
+        <option value="23084"
+      >221
+      
+        </option>
+    
+        <option value="23217"
+      >222
+      
+        </option>
+    
+        <option value="23333"
+      >223
+      
+        </option>
+    
+        <option value="23448"
+      >224
+      
+        </option>
+    
+        <option value="23570"
+      >225
+      
+        </option>
+    
+        <option value="23701"
+      >226
+      
+        </option>
+    
+        <option value="23821"
+      >227
+      
+        </option>
+    
+        <option value="23957"
+      >228
+      
+        </option>
+    
+        <option value="24084"
+      >229
+      
+        </option>
+    
+        <option value="24213"
+      >230
+      
+        </option>
+    
+        <option value="24340"
+      >231
+      
+        </option>
+    
+        <option value="24476"
+      >232
+      
+        </option>
+    
+        <option value="24617"
+      >233
+      
+        </option>
+    
+        <option value="24777"
+      >234
+      
+        </option>
+    
+        <option value="24929"
+      >235
+      
+        </option>
+    
+        <option value="25084"
+      >236
+      
+        </option>
+    
+        <option value="25246"
+      >237
+      
+        </option>
+    
+        <option value="25415"
+      >238
+      
+        </option>
+    
+        <option value="25607"
+      >239
+      
+        </option>
+    
+        <option value="25803"
+      >240
+      
+        </option>
+    
+        <option value="26000"
+      >241
+      
+        </option>
+    
+        <option value="26193"
+      >242
+      
+        </option>
+    
+        <option value="26405"
+      >243
+      
+        </option>
+    
+        <option value="26613"
+      >244
+      
+        </option>
+    
+      </select>
+      <input type="submit" value="Go"/>
+    </form>
+  
+    |
+    
+    <a href="/issue/21576/">Next Issue &gt;</a>
+    
+  
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+  
+
+
+<div class="search_bar">
+
+<ul>
+  <li><a href="/"><img src="/static/img/gcd_logo.aaf0e64616e2.png" alt="GCD" style="border:0;"></a></li>
+  <li>
+  <form action="/search/" method="get">
+    
+
+<select name="type" size="1">
+  
+    
+      <option value="haystack" selected> Everything </option>
+    
+  
+    <option value="series"> Series Name </option>
+  
+    <option value="haystack_issue"> Series Name &amp; Issue # </option>
+  
+    <option value="writer"> Writer </option>
+    <option value="penciller"> Penciller </option>
+    <option value="inker"> Inker </option>
+    <option value="colorist"> Colorist </option>
+    <option value="letterer"> Letterer </option>
+    <option value="editor"> Editor </option>
+    <option value="credit"> Any Credit </option>
+    <option value="story"> Story Title </option>
+    <option value="feature"> Feature </option>
+    <option value="character"> Character </option>
+    <option value="job_number"> Job Number </option>
+    <option value="isbn"> ISBN </option>
+    <option value="barcode"> Barcode </option>
+    <option value="publisher"> Publisher Name </option>
+    <option value="brand_group"> Brand Group Name </option>
+    <option value="brand"> Brand Emblem Name </option>
+    <option value="indicia_publisher"> Indicia Publisher Name </option>
+    <option value="award"> Award </option>
+    <option value="creator"> Creator </option>
+</select>
+
+    <input type="search" name="query" size="15" value="" placeholder="Search..">
+    <input type="submit" name="submit" value="Search">
+    Sort by
+    <select name="sort" size="1">
+    <option value="alpha" selected> Name
+    <option value="chrono"> Date
+</select>
+
+  </form>
+  </li>
+  <li><a href="/search/advanced/">Advanced Query</a></li>
+
+  <li>
+  <form action="/accounts/login/" method="GET">
+    <input type="submit" name="login" value="Log In" />
+    <input type="hidden" name="next" value="/issue/21497/" />
+  </form>
+  </li>
+  <li class="donate_link"><a method="post" href="/donate/">Donate</a></span></li>
+
+</ul>
+</div>
+
+
+
+
+
+
+
+
+  <div class="fine_print">
+
+  
+
+
+<div class="footer_disclaimer">
+  
+  <div class="footer_item">
+    
+    If you believe any of this data to be incorrect, please
+    <a class="new_window" href="http://errors.comics.org/enter_bug.cgi?product=GCD&amp;bug_file_loc=https://www.comics.org/issue/21497/&amp;short_desc=Strange%20Adventures%20%281950%20series%29%20%23207"
+       target="_blank">let us know</a>.
+    
+  </div>
+  
+  <div class="footer_item">
+    Cover thumbnails are used for identification purposes only.
+    All rights to cover images reserved by the respective copyright holders.
+  </div>
+  <div class="footer_item">
+    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Creative Commons License" src="/static/img/cc_sa_license88x31.2780aefe6b14.png"></a>
+    
+All portions of <a href="http://www.comics.org/" rel="cc:attributionURL">the Grand Comics Database</a>&trade;, except where noted otherwise, are
+copyrighted by the GCD and are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</a>. This includes but is not necessarily limited to our database schema and data distribution format.
+    
+  </div>
+  <div class="footer_item">
+    The GCD <a href="/privacy/">Privacy Policy</a>.
+    The GCD Web Site code is licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.
+  </div>
+</div>
+
+
+
+  <div class="footer_item" align="center">
+
+  
+<div id="ad-bottom"></div>
+
+<script type="text/javascript">
+window['nitroAds'].createAd('ad-bottom', {
+  "refreshLimit": 10,
+  "refreshTime": 90,
+  "renderVisibleOnly": true,
+  "refreshVisibleOnly": true,
+  "sizes": [
+    [
+      728,
+      90
+    ],
+    [
+      970,
+      90
+    ],
+    [
+      970,
+      250
+    ]
+  ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+});
+</script>
+
+  
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>
