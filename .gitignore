@@ -63,6 +63,7 @@ target/
 *.pem
 *.sublime-workspace
 *.ipynb_checkpoints
+.vscode/
 .mypy_cache/
 
 covers/
