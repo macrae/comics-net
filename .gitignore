@@ -65,6 +65,7 @@ target/
 *.ipynb_checkpoints
 .vscode/
 .mypy_cache/
+.pytest_cache/
 
 covers/
 metadata/
