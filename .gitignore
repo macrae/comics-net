@@ -69,3 +69,6 @@ target/
 
 covers/
 metadata/
+
+jupyter/justice_league/
+*.tar.gz
