@@ -13,7 +13,7 @@ from uuid import uuid4
 
 import jsonlines
 
-import comicvision.webscraper as webscraper
+import comics_net.webscraper as webscraper
 
 
 def run_scraper(specs: dict) -> None:

@@ -6,14 +6,14 @@ import requests
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 
-import comicvision.webscraper as webscraper
+import comics_net.webscraper as webscraper
 
 URL = "https://www.comics.org"
 
 
 def mocked_response_get(url):
     """
-    Mock the response of comicvision.webscraper.simple_get()
+    Mock the response of comics_net.webscraper.simple_get()
     """
 
     def transform_url_to_resource_name(url: str) -> Union[str, Exception]:
@@ -33,7 +33,7 @@ def mocked_response_get(url):
             return Exception("Could not transform the url into a resource name")
 
     resource = transform_url_to_resource_name(url)
-    f = open("./comicvision/resources/{}".format(resource), "rb")
+    f = open("./comics_net/resources/{}".format(resource), "rb")
     try:
         html = f.read()
         return html
@@ -42,18 +42,18 @@ def mocked_response_get(url):
 
 
 def test_read_jsonl():
-    metadata = webscraper.read_jsonl("./comicvision/resources/metadata.jsonl")
+    metadata = webscraper.read_jsonl("./comics_net/resources/metadata.jsonl")
     assert type(metadata) is list
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_simple_get(mock_get):
     url = "https://www.comics.org/publisher/54/?page=1"
     html = webscraper.simple_get(url)
     assert type(html) is bytes
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_transform_simple_get_html(mock_get):
     url = "https://www.comics.org/publisher/54/?page=1"
     html = webscraper.simple_get(url)
@@ -61,7 +61,7 @@ def test_transform_simple_get_html(mock_get):
     assert type(soup) is BeautifulSoup
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_get_issue_title(mock_get):
     issue_url = "https://www.comics.org/issue/370657/"
     issue_html = webscraper.simple_get(issue_url)
@@ -70,7 +70,7 @@ def test_get_issue_title(mock_get):
     assert title == "Action Comics #854"
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_get_issue_metadata(mock_get):
     issue_url = "https://www.comics.org/issue/370657/"
     issue_html = webscraper.simple_get(issue_url)
@@ -85,7 +85,7 @@ def test_get_issue_metadata(mock_get):
     assert issue_indicia_publisher == "DC Comics"
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_get_all_issue_metadata(mock_get):
     issue_url = "https://www.comics.org/issue/370657/"
     issue_html = webscraper.simple_get(issue_url)
@@ -123,7 +123,7 @@ def test_get_all_issue_metadata(mock_get):
     assert set(issue_metadata.keys()).difference(expected_keys) == set()
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_get_issue_cover_metadata(mock_get):
     issue_url = "https://www.comics.org/issue/370657/"
     issue_html = webscraper.simple_get(issue_url)
@@ -155,13 +155,13 @@ def test_get_issue_cover_metadata(mock_get):
 
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_get_cover_credits_from_cover_page(mock_get):
     issue_cover_url = "https://www.comics.org/issue/36858/cover/4/"
     issue_cover_html = webscraper.simple_get(issue_cover_url)
     issue_cover_soup = webscraper.transform_simple_get_html(issue_cover_html)
 
-    metadata = webscraper.read_jsonl("./comicvision/resources/metadata.jsonl")
+    metadata = webscraper.read_jsonl("./comics_net/resources/metadata.jsonl")
 
     issue_cover_credits = webscraper.get_cover_credits_from_cover_page(issue_cover_soup, metadata[0])
 
@@ -202,14 +202,14 @@ def test_get_cover_credits_from_cover_page(mock_get):
 
     assert "cover_awards" not in issue_cover_credits["covers"]["Original"].keys()
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_get_cover_credits_from_cover_page_2(mock_get):
 
     issue_cover_url = "https://www.comics.org/issue/1179057/cover/4/"
     issue_cover_html = webscraper.simple_get(issue_cover_url)
     issue_cover_soup = webscraper.transform_simple_get_html(issue_cover_html)
 
-    metadata = webscraper.read_jsonl("./comicvision/resources/metadata.jsonl")
+    metadata = webscraper.read_jsonl("./comics_net/resources/metadata.jsonl")
 
     issue_cover_credits = webscraper.get_cover_credits_from_cover_page(
         issue_cover_soup, metadata[0])
@@ -252,7 +252,7 @@ def test_is_duplicate():
         webscraper.is_duplicate(
             title="Action Comics #854",
             on_sale_date="2007-08-15",
-            metadata_path="./comicvision/resources/metadata.jsonl",
+            metadata_path="./comics_net/resources/metadata.jsonl",
         )
         is True
     )
@@ -261,7 +261,7 @@ def test_is_duplicate():
         webscraper.is_duplicate(
             title="Action Comics #855",
             on_sale_date="2007-08-15",
-            metadata_path="./comicvision/resources/metadata.jsonl",
+            metadata_path="./comics_net/resources/metadata.jsonl",
         )
         is False
     )
@@ -270,7 +270,7 @@ def test_is_duplicate():
         webscraper.is_duplicate(
             title="Action Comics #854",
             on_sale_date="2007-08-22",
-            metadata_path="./comicvision/resources/metadata.jsonl",
+            metadata_path="./comics_net/resources/metadata.jsonl",
         )
         is False
     )
@@ -294,7 +294,7 @@ def test_get_variant_cover_name():
     assert variant_name == "Original"
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_parse_series_from_publisher_page(mock_get):
     publisher_url = "https://www.comics.org/publisher/54/?page=1"
     publisher_html = webscraper.simple_get(publisher_url)
@@ -306,7 +306,7 @@ def test_parse_series_from_publisher_page(mock_get):
     assert len(df) > 0
 
 
-@mock.patch("comicvision.webscraper.simple_get", side_effect=mocked_response_get)
+@mock.patch("comics_net.webscraper.simple_get", side_effect=mocked_response_get)
 def test_cover_gallery_pages(mock_get):
     cover_gallery_url = "https://www.comics.org/series/7768/covers/"
     cover_gallery_html = webscraper.simple_get(cover_gallery_url)
