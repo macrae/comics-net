@@ -5,7 +5,7 @@ from itertools import chain
 
 from setuptools import find_packages, setup
 
-package_name = "cover-vision"
+package_name = "comics_net"
 
 with open(os.path.join(os.getcwd(), "VERSION")) as version_file:
     version = version_file.read().strip()
@@ -78,11 +78,11 @@ class BuildCmd(build):
 setup(
     name=package_name,
     version=version,
-    license="GNU",
-    description="Deep Learning Utility for Comic Book Covers",
+    license="GNU General Public License",
+    description="A deep learning utility for comic book covers",
     author="Sean MacRae",
     author_email="s.mac925@gmail.com",
-    url="https://github.com",
+    url="https://github.com/macrae/comics-net",
     packages=find_packages(exclude=["tests"]),
     cmdclass={"build": BuildCmd},
     install_requires=requirements,
