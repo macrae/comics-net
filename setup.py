@@ -62,7 +62,7 @@ def mypy_typecheck():
 
     print(f"Typechecking with mypy:")
     exit_code = subprocess.call(mypy_command)
-    if exit_code is not 0:
+    if exit_code != 0:
         print("\n\nERROR: type checking failed -- type errors detected")
         exit(exit_code)
     else:
