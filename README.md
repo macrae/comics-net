@@ -1,14 +1,8 @@
-# Deep Learning Utility for Comic Books
+# Deep Learning for Comic Books
 
-This project applies neural networks to comic book covers to perform a variety of
-machine learning tasks, such as: 1) character classification (is a specific character
-on a cover?) or 2) comic book synopsis generation (create arbitrary descriptions of an
-issue based on the language of other issue synopses).
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine
-for development and testing.
+This project applies neural networks to comic book covers and synopses to perform a
+variety of machine learning tasks, for example, character classification and comic book
+synopsis generation.
 
 ### Prerequisites
 
@@ -17,92 +11,52 @@ dependencies can be found in the `requirements.txt` and `requirements-dev.txt` f
 
 ### Installing
 
-Create a Python3.6.9 virtual environment.
+Create, activate and install dependencies into a Python3.6 environment.
 
 ```
 python3 -m venv .venv
-```
-
-If you get an error saying "returned non-zero exit status 1",
-make sure you have Python3 and pip3 upgraded to the current version and
-if that doesn't work, re-run the above command as:
-
-```
-python3 -m venv --without-pip .venv
-```
-
-Activate the virtual environemnt
-
-```
 source .venv/bin/activate
-```
-
-Install the third-party dependencies.
-
-```
 pip3 install -r requirements.txt
 pip3 install -r requirements-dev.txt
 ```
 
-## Running the tests
-
-We are using [pytest](https://docs.pytest.org/en/2.9.1/getting-started.html) for test
-writing. Run this snippet in a terminal window to run the tests.
+## Running Tests
 
 ```
-python3 -m pytest comics-net/* -vvsx
-```
-
-You can also run the test suite with a coverage report. Although it may not be possible to achieve 100% coverage - nor does 100% coverage ensure a well written test suite - it is still a useful heuristic in assessing overall application health.
-
-```
-pytest --cov-report html --cov functions --verbose
-```
-
-After running the coverage report, open the summary in your browser with the following.
-
-```
-open htmlcov/index.html
-```
-
-### Break down into end to end tests
-
-...
-
-```
-test_get_task() # authenticates and gets task status
-```
-
-### And coding style tests
-
-Check for PEP8 style guide adherence.
-
-```
-test_pep8(self)
+python3 -m pytest comics_net/
 ```
 
 ## Using the Project
 
-...
+This project consists of two main applications: 1) webscraping and exploratory data
+analysis of comic book covers and metadata, and 2) deep learning on comic book covers
+and synopses to perform a variety of machine learning tasks, such as classification
+and text generation.
 
-## Contributing
+The good news is that the webscraping of a significant number of comic book covers and
+their metadata has already been performed and the datasets already published to a public
+repository for your convenience.
 
-Please read [CONTRIBUTING.md](https://gitlab.healthcareit.net/smacrae/jira-api/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+### Datasets
 
-## Versioning
+A the complete curated dataset of comic book covers with metadata and annotations for
+this project can be found here: [s3://])(https://aws.s3.com).
 
-Describe how we version here.
+Within the `comics_net` module there is a `URLs` object with attributes to different
+training dataset locations, for example `URLs.justic_league` will get you the location
+to a Justice League curated dataset which contains characters present on any issue of
+any series of the Justice League.
 
 ## Authors
 
 * **Sean MacRae** - *Initial work* - [macrae](https://github.com/macrae)
 
-See also the list of [contributors](https://github.com/macrae/comics-net/graphs/contributors) who participated in this project.
-
 ## License
 
-This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
+`<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.`
 
 ## Acknowledgments
 
-...
+Thanks to the good folks at [comics.org](https://comics.org) for their hard work building
+and maintaining one of the richest databases of graphic novel covers and metadata. I
+could not have done this without you!
