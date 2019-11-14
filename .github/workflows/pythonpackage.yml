@@ -31,5 +31,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest comics_net/tests_webscraper.py -vsx
-        pytest comics_net/tests_analyzer.py -vsx
+        python3 -m pytest comics_net/
