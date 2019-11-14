@@ -212,10 +212,32 @@ def get_random_sample_of_covers(df_covers: DataFrame, character: str, n: int) ->
         covers["cover_{}".format(i)]["image_path"] = image_path
         covers["cover_{}".format(i)]["characters"] = characters
 
-        # TODO: check if image is duplicate (series, title, and issue # is already present)
-
     return covers
 
+
+# TODO: dedupe covers (British, Canadian variants, etc...)
+
+# TODO: exclude cover spreads
+# for i in range(0, len(covers)):
+#     im = Image.open('../covers/' + covers[i])
+#     width, height = im.size
+#     if (height < 565.0) | (height > 637.0):
+#         pass
+#     else:
+#         im_resize = resize_im(im, (400, 600))
+#         im_resize.save('../covers_filtered/' + covers[i])
+
+# TODO:  add option to create dataset using this pattern...
+# path\
+#   train\
+#     clas1\
+#     clas2\
+#     ...
+#   valid\
+#     clas1\
+#     clas2\
+#     ...
+#   test\
 
 def create_training_dirs(
     df_cover_characters: DataFrame, characters_dict: dict, save_dir: str
