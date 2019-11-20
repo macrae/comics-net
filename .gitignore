@@ -71,4 +71,5 @@ covers/
 metadata/
 
 jupyter/justice_league/
+jupyter/text/
 *.tar.gz
