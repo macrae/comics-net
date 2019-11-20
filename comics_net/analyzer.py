@@ -208,9 +208,11 @@ def get_random_sample_of_covers(df_covers: DataFrame, character: str, n: int) ->
         characters = df_covers[df_covers["save_to"] == image_path][
             "cover_characters_list_aliases"
         ].iloc[0]
+        synopsis = df_covers["synopsis"].iloc[i]
 
         covers["cover_{}".format(i)]["image_path"] = image_path
         covers["cover_{}".format(i)]["characters"] = characters
+        covers["cover_{}".format(i)]["synopsis"] = synopsis
 
     return covers
 
