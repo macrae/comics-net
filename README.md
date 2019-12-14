@@ -47,6 +47,28 @@ training dataset locations, for example `URLs.justic_league` will get you the lo
 to a Justice League curated dataset which contains characters present on any issue of
 any series of the Justice League.
 
+|Group	|# Images	|# Labels	|   	|   	|
+|---	|---	|---	|---	|---	|
+|Justice League	|11,409	|35	|   	|   	|
+|Avengers	|10,978	|27	|	|   	|
+|Legion of Super-Heroes	|5,536	|14	|   	|   	|
+|Archies	|5,439	|27	|   	|   	|
+|X-Men	|5,008	|27	|   	|   	|
+|Defenders	|2,021	|8	|   	|   	|
+|Fantastic Four	|1,917	|4	|   	|   	|
+|Suicide Squad	|913	|4	|   	|   	|
+|Inhumans	|528	|5	|   	|   	|
+|Guardians of the Galaxy	|379	|5	|   	|   	|
+|Green Lantern Corps	|221	|1	|   	|   	|
+|Outsiders	|181	|1	|   	|   	|
+|Doom Patrol	|168	|2	|   	|   	|
+|Alpha Flight	|100	|1	|   	|   	|
+|More than 500 	|35,993	|53	|   	|   	|
+|More than 750   	|30,964	|30	|   	|   	|
+|More than 1,000	|27,027	|21	|   	|   	|
+|More than 2,000	|19,879	|9	|   	|   	|
+|More than 4,000   	|12,191	|3	|   	|   	|
+
 ## Authors
 
 * **Sean MacRae** - *Initial work* - [macrae](https://github.com/macrae)

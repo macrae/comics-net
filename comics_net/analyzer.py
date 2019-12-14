@@ -79,7 +79,37 @@ def replace_semicolons_in_brackets(characters: str):
     for match in matches:
         substring = characters[match[0] : match[1]]
         if substring.count(";") == 1 and (
-            ("Kal-El" in substring) | ("Zor-El" in substring)
+            ("also as" in substring)
+            | ("Kal-El" in substring)
+            | ("Kal-L" in substring)
+            | ("Kara Zor-El" in substring)
+            | ("Martin Stein" in substring)
+            | ("Etrigan" in substring)
+            | ("James Howlett" in substring)
+            | ("Gwendolyne Stacy" in substring)
+            | ("Gwen Stacy" in substring)
+            | ("Katar Hol" in substring)
+            | ("Shayera Hol" in substring)
+            | ("Kon-El" in substring)
+            | ("Laura Kinney" in substring)
+            | ("Kory Ander" in substring)
+            | ("Bruce Banner" in substring)
+            | ("Eobard Thawne" in substring)
+            | ("Victor von Doom" in substring)
+            | ("as Cat-Woman" in substring)
+            | ("also as Task Force X" in substring)
+            | ("Diana Prince" in substring)
+            | ("Nathan Dayspring" in substring)
+            | ("Susan Storm; Susan Richards" in substring)
+            | ("Warren Worthington III" in substring)
+            | ("Copycat" in substring)
+            | ("Tornado Tyrant" in substring)
+            | ("Bro'Dee Walker" in substring)
+            | ("Ke'Haan" in substring)
+            | ("Flash; Barry Allen" in substring)
+            | ("Jennie-Lynn Hayden" in substring)
+            | ("Donald Blake" in substring)
+            | ("Thor Odinson; " in substring)
         ):
             characters = characters.replace(substring, substring.replace(";", "/"))
         if substring.count(";") > 1:
@@ -216,19 +246,6 @@ def get_random_sample_of_covers(df_covers: DataFrame, character: str, n: int) ->
 
     return covers
 
-
-# TODO: dedupe covers (British, Canadian variants, etc...)
-
-# TODO: exclude cover spreads
-# for i in range(0, len(covers)):
-#     im = Image.open('../covers/' + covers[i])
-#     width, height = im.size
-#     if (height < 565.0) | (height > 637.0):
-#         pass
-#     else:
-#         im_resize = resize_im(im, (400, 600))
-#         im_resize.save('../covers_filtered/' + covers[i])
-
 # TODO:  add option to create dataset using this pattern...
 # path\
 #   train\
@@ -240,6 +257,7 @@ def get_random_sample_of_covers(df_covers: DataFrame, character: str, n: int) ->
 #     clas2\
 #     ...
 #   test\
+
 
 def create_training_dirs(
     df_cover_characters: DataFrame, characters_dict: dict, save_dir: str

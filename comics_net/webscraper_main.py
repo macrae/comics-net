@@ -181,7 +181,7 @@ def run_scraper(specs: dict) -> None:
                                     writer.write(metadata)
 
                                 # slow down the requests
-                                sleep(random.uniform(3, 5))
+                                sleep(random.uniform(1, 2))
 
                         else:
                             # get metadata from issue page
@@ -226,7 +226,7 @@ def run_scraper(specs: dict) -> None:
                                 writer.write(metadata)
 
                             # slow down the requests
-                            sleep(random.uniform(3, 5))
+                            sleep(random.uniform(1, 2))
 
                 # if cover gallery for series is paginated...
                 elif webscraper.cover_gallery_pages(cover_gallery_soup) > 1:
@@ -336,7 +336,7 @@ def run_scraper(specs: dict) -> None:
                                         writer.write(metadata)
 
                                     # slow down the requests
-                                    sleep(random.uniform(3, 5))
+                                    sleep(random.uniform(1, 2))
 
                             else:
                                 # get metadata from issue page
@@ -380,7 +380,7 @@ def run_scraper(specs: dict) -> None:
                                     writer.write(metadata)
 
                                 # slow down the requests
-                                sleep(random.uniform(3, 5))
+                                sleep(random.uniform(1, 2))
 
 
 def main(main_args):
