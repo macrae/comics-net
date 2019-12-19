@@ -68,8 +68,8 @@ target/
 .pytest_cache/
 
 covers/
-annotations/
+metadata/covers.jsonl
+metadata/on_sale_year.jsonl
 
 jupyter/justice_league/
 jupyter/text/
-*.tgz

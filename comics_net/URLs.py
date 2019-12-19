@@ -3,6 +3,7 @@ class URLs:
     avengers = "https://comics-net.s3-us-west-1.amazonaws.com/avengers"
     defenders = "https://comics-net.s3-us-west-1.amazonaws.com/defenders"
     doom_patrol = "https://comics-net.s3-us-west-1.amazonaws.com/doom_patrol"
+    era = "https://comics-net.s3-us-west-1.amazonaws.com/era"
     fantastic_four = "https://comics-net.s3-us-west-1.amazonaws.com/fantastic_four"
     guardians_of_the_galaxy = "https://comics-net.s3-us-west-1.amazonaws.com/guardians_of_the_galaxy"
     inhumans = "https://comics-net.s3-us-west-1.amazonaws.com/inhumans"
