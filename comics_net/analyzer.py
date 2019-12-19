@@ -313,7 +313,7 @@ def create_training_dirs(
 
     for cover in dicts:
 
-        save_image_to = save_dir + "/images/" + cover["id"]
+        save_image_to = save_dir + "/images/" + str(cover["id"]).replace("\t", " ")
 
         im = Image.open("." + cover["image_path"])
         im = resize_im(im, dims=(400, 600))
@@ -322,7 +322,7 @@ def create_training_dirs(
         save_im(im, save_image_to, im_type="jpeg")
 
         # write annotations/labels (if not imagenet style)
-        name = cover["id"]
+        name = str(cover["id"]).replace("\t", " ")
         label = (
             str(cover["label"])
             .replace("[", "")
