@@ -68,7 +68,7 @@ target/
 .pytest_cache/
 
 covers/
-metadata/
+annotations/
 
 jupyter/justice_league/
 jupyter/text/
