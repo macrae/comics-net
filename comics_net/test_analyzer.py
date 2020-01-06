@@ -1,7 +1,3 @@
-import unittest
-
-# from pandas import DataFrame
-
 import comics_net.analyzer as analyzer
 
 metadata_path = "./comics_net/resources/metadata.jsonl"
