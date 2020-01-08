@@ -2,6 +2,7 @@ import difflib
 import os
 import random
 import re
+from shutil import copyfile
 from typing import List, Union
 
 import jsonlines
@@ -246,6 +247,7 @@ def get_random_sample_of_covers(df_covers: DataFrame, character: str, n: int) ->
 
     return covers
 
+
 # TODO:  add option to create dataset using this pattern...
 # path\
 #   train\
@@ -340,3 +342,71 @@ def create_training_dirs(
         else:
             print("wtf happend?")
             print(record)
+
+
+# TODO: update file_name to take an os.path in lieu of a string
+def search_row(file_name: str, string: str) -> Union[int, None]:
+    """Searches a file for the first row containing a string and returns the row index.
+    If no match is found returns None.
+
+    Args:
+        file_name: path to file
+        string: substring to find
+
+    Returns:
+        int: first row containing substring
+    """
+    with open(file_name, "r") as f:
+        for i, row in enumerate(f):
+            if string in row:
+                return i
+    return None
+
+
+# TODO: update file_name to take an os.path in lieu of a string
+def replace_line(file_name: str, row: int, text: str) -> None:
+    """Replaces a row in a file with the text.
+
+    Args:
+        file_name: path to file to update
+        row: index to update
+        text: text to update
+
+    Returns:
+        None: this method has side-effects
+    """
+    lines = open(file_name, "r").readlines()
+    lines[row] = text + "\n"
+    out = open(file_name, "w")
+    out.writelines(lines)
+    out.close()
+
+
+def update_label(image_bunch: str, file_name: str, label: List[str]) -> None:
+    """[summary]
+
+    Args:
+        image_bunch: [description]
+        file_name: [description]
+        new_label: [description]
+
+    Returns:
+        None: this method has side-effects
+    """
+    labels = image_bunch + "labels.txt"
+    labels_updated = image_bunch + "labels_updated.txt"
+
+    # check if labels_updated.txt exists, if not then create it
+    if not os.path.exists(labels_updated):
+        copyfile(labels, labels_updated)
+
+    # check if file_name exists in labels_updated.txt, if not then Exception
+    row_index = search_row(labels, file_name)
+
+    # update row in labels_updated.txt replacing existing label, with new_label
+    new_label = str(label).replace("[", "").replace("]", "").replace("'", "").replace(", ", "|")
+
+    record = [file_name, new_label]
+    row_update = "\t".join(record)
+
+    replace_line(labels_updated, row_index, row_update)

@@ -1,6 +1,7 @@
 import comics_net.analyzer as analyzer
 
 metadata_path = "./comics_net/resources/metadata.jsonl"
+labels_path = "./comics_net/resources/fantastic_four/labels.txt"
 
 
 def test_load_metadata():
@@ -101,5 +102,32 @@ def test_convert_characters_to_list():
 def test_get_random_sample_of_covers():
     assert True
 
+
 def test_create_training_dirs():
     assert True
+
+
+def test_search_row():
+    issue = "Fantastic Four: Fantastic Four #187 30¢ ()"
+    actual = analyzer.search_row(file_name=labels_path, string=issue)
+    expected = 2
+    assert actual == expected
+
+
+# # TODO: how to test this method w/ side-effects?
+# def test_replace_line():
+#     issue = "Fantastic Four: Fantastic Four #187 30¢ ()"
+#     labels = "Human Torch Johnny Storm|The Thing Ben Grimm|Mr. Fantastic Reed Richards|Invisible Woman Sue Storm Richards"
+#     analyzer.replace_line(file_name=labels_path, row=2, text="/t".join[issue, labels])
+
+
+def test_update_label():
+    issue = "Fantastic Four: Fantastic Four #187 30¢ ()"
+    label = ["Dr. Doom", "Reed Richards"]
+    image_bunch = "./comics_net/resources/fantastic_four/"
+    analyzer.update_label(image_bunch=image_bunch, file_name=issue, label=label)
+
+    with open(image_bunch + "labels_updated.txt", "r") as f:
+        for i, row in enumerate(f):
+            if i == 2:
+                assert row == "Fantastic Four: Fantastic Four #187 30¢ ()\tDr. Doom|Reed Richards\n"
