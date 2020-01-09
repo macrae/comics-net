@@ -130,4 +130,23 @@ def test_update_label():
     with open(image_bunch + "labels_updated.txt", "r") as f:
         for i, row in enumerate(f):
             if i == 2:
-                assert row == "Fantastic Four: Fantastic Four #187 30¢ ()\tDr. Doom|Reed Richards\n"
+                assert (
+                    row
+                    == "Fantastic Four: Fantastic Four #187 30¢ ()\tDr. Doom|Reed Richards\n"
+                )
+
+
+def test_remove_images():
+    image_bunch = "./comics_net/resources/fantastic_four"
+    files_to_exclude = [
+        "She-Hulk: She-Hulk #12 Original ().jpg",
+        "Marvel Mystery Comics: Marvel Mystery Comics #43 Original (1943-03-22).jpg",
+    ]
+    analyzer.remove_images(image_bunch, files_to_exclude)
+
+    with open(image_bunch + "_updated/labels_updated.txt", "r") as f:
+        counter = 0
+        for i, row in enumerate(f):
+            counter += 1
+
+    assert counter == 3

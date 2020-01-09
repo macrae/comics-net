@@ -2,6 +2,7 @@ import difflib
 import os
 import random
 import re
+from pathlib import Path
 from shutil import copyfile
 from typing import List, Union
 
@@ -383,12 +384,13 @@ def replace_line(file_name: str, row: int, text: str) -> None:
 
 
 def update_label(image_bunch: str, file_name: str, label: List[str]) -> None:
-    """[summary]
+    """Given an image bunch directory, the file name of an image, and a label to update
+    the image bunch with, update the labels file with the new label.
 
     Args:
-        image_bunch: [description]
-        file_name: [description]
-        new_label: [description]
+        image_bunch: directory to image bunch
+        file_name: name of image to update label of
+        label: new label
 
     Returns:
         None: this method has side-effects
@@ -404,9 +406,58 @@ def update_label(image_bunch: str, file_name: str, label: List[str]) -> None:
     row_index = search_row(labels, file_name)
 
     # update row in labels_updated.txt replacing existing label, with new_label
-    new_label = str(label).replace("[", "").replace("]", "").replace("'", "").replace(", ", "|")
+    new_label = (
+        str(label).replace("[", "").replace("]", "").replace("'", "").replace(", ", "|")
+    )
 
     record = [file_name, new_label]
     row_update = "\t".join(record)
 
     replace_line(labels_updated, row_index, row_update)
+
+
+def remove_images(image_bunch: str, files_to_exclude: List[str]) -> None:
+    """Given an image bunch and a list of files to exclude, create a new image bunch
+    excluding the given files.
+
+    Args:
+        image_bunch: directory to image bunch
+        files_to_exclude: list of file names to exclude from image_bunch/images/
+
+    Returns:
+        None: this method has side-effects
+    """
+    # create new image_bunch_updated/ dir and image_bunch_updated/images dir
+    Path(image_bunch + "_updated/images").mkdir(parents=True, exist_ok=True)
+
+    # if file_name in image_bunch/images not in file_names, copy it to image_bunch_updated/images
+    for file_name in os.listdir(image_bunch + "/images"):
+        if file_name not in files_to_exclude:
+            copyfile(
+                src=str(image_bunch + "/images/{}".format(file_name)),
+                dst=str(image_bunch + "_updated/images/{}".format(file_name)),
+            )
+
+    # check if labels_updated.txt exists, if not then create it
+    if not os.path.exists(str(image_bunch + "/labels_updated.txt")):
+        copyfile(
+            src=str(image_bunch + "/labels.txt"),
+            dst=str(image_bunch + "/labels_updated.txt"),
+        )
+
+    # if file_nme in image_bunch/labels_updated.txt not in file_names, copy it to image_bunch_updated/labels_updated.txt
+    updated_labels = []
+    with open(str(image_bunch + "/labels_updated.txt"), "r") as f:
+        for row in f:
+            exclude = np.array(
+                [file_name in row for file_name in files_to_exclude]
+            ).any()
+            if exclude:
+                continue
+            else:
+                updated_labels.append(row)
+
+    # write updated labels
+    with open(str(image_bunch + "_updated/labels_updated.txt"), "w") as f:
+        for row in updated_labels:
+            f.write(row)
