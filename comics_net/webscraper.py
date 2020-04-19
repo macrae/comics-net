@@ -71,6 +71,7 @@ def simple_get(url: str) -> Union[bytes, None]:
         return None
 
 
+# TODO: deprecate this...
 def transform_simple_get_html(raw_html: Optional[bytes]) -> BeautifulSoup:
     """
     Takes the raw HTML response of a GET request and returns a tree-based
@@ -84,7 +85,7 @@ def get_soup(url: str) -> BeautifulSoup:
     Given a url returns a tree-based interface for parsing HTML.
     """
     html = simple_get(url)
-    return transform_simple_get_html(html)
+    return BeautifulSoup(html, "html.parser")
 
 
 # TODO: rename this method
