@@ -1,7 +1,7 @@
 beautifulsoup4==4.6.0
 fastai==1.0.57
 jsonlines==1.2.0
-pandas==0.22.0
+pandas>=0.22.0
 python-dateutil==2.7.2
 pytz==2018.4
 requests==2.18.4
